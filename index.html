@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="shortcut icon" href="favicon_io/android-chrome-512x512.png" type="image/x-icon">
+
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>SportShop</title>
+</head>
+<body>
+    
+   <!-- navigation bar -->
+    <nav>
+        <h1><a href="">SportShop</a></h1>
+        <div class="onglet">
+            <div class="dropdown">
+                <div class="dropdown-content">
+                    <a class="close-button"><i class="fa-solid fa-xmark" style="color: #000000;"></i></a>
+                    <p class="link"><a href="Men/index.html">Men</a></p>
+                    <p class="link"><a href="woman/index.html">Woman</a></p>
+                    <p class="link"><a href="shoes/index.html">Shoes</a></p>
+                </div>
+            </div>
+            <form action="">
+                <input type="search" name="search" id="search" placeholder="Search">
+            </form>
+            
+            <p class="icons"><a href="shop/index.html" rel="noopener noreferrer"><i class="fa-solid fa-cart-shopping"></i></a></p>
+            <p class="icons" id="sphere" style="cursor: pointer;"><i class='bx bxs-moon'></i></p>
+              
+            <button class="dropbtn"><i class="fa-solid fa-bars"></i> MENU</button>
+        </div>
+    </nav>
+    <!-- navigation bar End -->
+
+
+
+    <!-- Header debut -->
+    <header>
+        <div class="brand-league">
+            <div class="brand-league-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/1/12/National_Football_League_2008.svg/1200px-National_Football_League_2008.svg.png" alt="NFL-image-logo">
+                <p>NFL</p>
+            </div>
+            <div class="brand-league-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/fr/c/c9/Logo_NBA_2017.png" alt="NBA-image-logo">
+                <p>NBA</p>
+            </div>
+
+            <div class="brand-league-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Major_League_Baseball_logo.svg/1200px-Major_League_Baseball_logo.svg.png" alt="NFL-image-logo">
+                <p>MLB</p>
+            </div>
+
+            <div class="brand-league-logo">
+                <img src="https://cdn-5.motorsport.com/images/amp/68ey3q40/s1000/f1-abu-dhabi-gp-2017-f1-logo-6614911.jpg" alt="formula1-image-logo">
+                <p>F1</p>
+            </div>
+
+            <div class="brand-league-logo">
+                <img src="https://www.ballesdesport.com/wp-content/uploads/2023/08/IA0941_1_HARDWARE_Photography_Fr.jpg" alt="formula1-image-logo">
+                <p>FootBall</p>
+            </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="#e80f46" points="0,0 50,100 100,0"/>
+          </svg>
+        <h1>This is the shop, For those who love sport</h1>
+        <button>Navigateur <i class="fa-solid fa-paper-plane"></i></button>
+    </header>
+
+    <div class="container-shop">
+            <div class="buttons">
+                <button id="next"><i class='bx bx-left-arrow' ></i></button>
+                <button id="prev"><i class='bx bx-right-arrow'></i></button>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="image/36.webp" alt="">
+                    <div>
+                        <p>Maillot Authentique Domicile Real Madrid</p>
+                        <p>30.000F</p>
+                    </div>
+                    <a href="https://shop.realmadrid.com/?lang=fr&utm_campaign=enlaces-tienda&utm_source=web&utm_medium=links-tienda&utm_content=menu-1%C2%BA" target="_blank">buy now</a>
+                </div>
+
+                <div class="card">
+                    <img src="image/35.jpg" alt="">
+                    <div>
+                        <p>Maillot Authentique Domicile Arsenal</p>
+                        <p>27.000F</p>
+                    </div>
+                    <a href="https://arsenaldirect.arsenal.com/?utm_source=arsenaldotcom&utm_medium=OnlineShoppingButton&utm_campaign=ArsenalOnlineShopping" target="_blank">buy now</a>
+                </div>
+
+                <div class="card">
+                    <img src="image/37.avif" alt="">
+                    <div>
+                        <p>Maillot Authentique Exterieur Man Utd</p>
+                        <p>29.000F</p>
+                    </div>
+                    <a href="https://store4.manutd.com/fr/?_s=bm-fi-psc-mufc-shopnav" target="_blank">buy now</a>
+                </div>
+
+                <div class="card">
+                    <img src="image/38.webp" alt="">
+                    <div>
+                        <p>Maillot Authentique <br> Third Chelsea</p>
+                        <p>19.000F</p>
+                    </div>
+                    <a href="https://www4.chelseamegastore.com/en/?_s=bm-FI-PSC-CFC-ShopNavEN" target="_blank">buy now</a>
+                </div>
+
+                <div class="card">
+                    <img src="image/39.avif" alt="">
+                    <div>
+                        <p>Maillot Authentique Gardien Bayern Munich</p>
+                        <p>16.000F</p>
+                    </div>
+                    <a href="https://fcbayern.com/store/de-de?emsrc=coop&refID=header-link%2Fde" target="_blank">buy now</a>
+                </div>
+
+                <div class="card">
+                    <img src="image/40.webp" alt="">
+                    <div>
+                        <p>Maillot Authentique Domicile Inter Milan</p>
+                        <p>23.000F</p>
+                    </div>
+                    <a href="https://store.inter.it/it-it/?utm_source=menu&utm_medium=website&utm_campaign=sito-menu&_gl=1*12erkys*_gcl_au*NzgxODE4ODg4LjE2OTE2NzU5OTA." target="_blank">buy now</a>
+                </div>
+
+                <div class="card">
+                    <img src="image/41.webp" alt="">
+                    <div>
+                        <p>Maillot Authentique Exterieur AC Milan</p>
+                        <p>24.000F</p>
+                    </div>
+                    <a href="https://store.acmilan.com/?_gl=1*5lzqdp*_ga*MjEyMDU4MDcwMC4xNjkxNjY3ODEx*_ga_HB54P1QRS8*MTY5MjYxNzk2NS4zLjAuMTY5MjYxNzk2NS4wLjAuMA..*_fplc*YUx4QzZuZjh5R0xJYlVyUHBPdGNlbFJOejR1RiUyRlAxZGJWd1hZMVNhQXhiQmtDVEM2bjRsOFJaeTQ0JTJCMFhBenZIbVBZJTJGZGN0WndjQnB3dDNVVTN1ZHpSa0FXSmhRYUtxTWF2dnNJNnQ4VnlKN1dsQ2NXejZRJTJCR1MlMkZvMzFEQSUzRCUzRA.." target="_blank">buy now</a>
+                </div>
+
+                <div class="card">
+                    <img src="image/42.webp" alt="">
+                    <div>
+                        <p>Maillot Authentique Domicile Man City</p>
+                        <p>28.000F</p>
+                    </div>
+                    <a href="hhttps://assets-fr.imgfoot.com/media/cache/800x800/manchester-city-home-2023-2024.jpg" target="_blank">buy now</a>
+                </div>
+
+                <div class="card">
+                    <img src="image/43.webp" alt="">
+                    <div>
+                        <p>Maillot Authentique Domicile Barça</p>
+                        <p>29.700F</p>
+                    </div>
+                    <a href="https://store.fcbarcelona.com/fr/?ext=OCM_421&utm_source=WebBarca&utm_medium=Menu&utm_campaign=MenuWebBarca_ORG_BLM_HOME_OCM_webBarca_TXT_WW_FR&_ga=2.179617828.1086327638.1692618156-1069260044.1692618156&_gl=1*bk7w0c*_ga*MTA2OTI2MDA0NC4xNjkyNjE4MTU2*_ga_XCQ7B6K8TL*MTY5MjYxODE1Ni4xLjEuMTY5MjYxODQxNi4wLjAuMA.." target="_blank">buy now</a>
+                </div>
+
+                <div class="card">
+                    <img src="image/44.avif" alt="">
+                    <div>
+                        <p>Maillot Authentique Anniversaire ATL Madrid</p>
+                        <p>20.800F</p>
+                    </div>
+                    <a href="https://shop.atleticodemadrid.com/en/?_s=bm-FI-PSC-EN-DESKTOP" target="_blank">buy now</a>
+                </div>
+
+                <div class="card">
+                    <img src="image/45.jpg" alt="">
+                    <div>
+                        <p>Maillot Authentique Extérieur Totenham</p>
+                        <p>20.800F</p>
+                    </div>
+                    <a href="image/45.jpg" target="_blank">buy now</a>
+                </div>
+            </div>
+    </div>
+
+    <div class="main-body">
+        <div class="main-body-bod">
+            <h2 id="Men">Home of Men Sport Jersey</h2>
+            <button id="shop-button">Shop Now</button>
+        </div>
+        <div>
+            <img src="https://shop.realmadrid.com/cdn/shop/files/herobanner_lifestyle-desktop_common_goal_1500x.jpg?v=1690964294" alt="image">
+        </div>
+    </div>
+
+    <div class="video">
+            <video autoplay muted loop width="70%" height="60%" controls>
+                <source src="video/madrid.mp4" type="video/mp4">
+            </video>
+    </div>
+
+
+    <div class="sports-team baseball">
+        <div class="sports-team-image baseball-image">
+            <img src="https://i.pinimg.com/564x/97/64/a7/9764a78cd8c8d8aee845ddeecf2e670a.jpg" alt="ohtani">
+        </div>
+        <div class="sports-team-content baseball-content">
+            <h3>BASEBALL TEAMS</h3>
+            <p>If you love Baseball, you'll find your pleasure</p>
+            <button>Shop Now</button>
+        </div> 
+    </div>   
+    
+    <div class="global-base">
+        <div class="card-baseball">
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/philadelphia-phillies/mens-nike-bryce-harper-cream-philadelphia-phillies-alternate-replica-player-name-jersey_pi3592000_altimages_ff_3592660-f3ec37cf972bc4030bdcalt2_full.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/san-diego-padres/mens-new-era-gold-san-diego-padres-2024-spring-training-low-profile-59fifty-fitted-hat_ss5_p-200363951+pv-3+u-rz8gg0yp5ztok7t3hcus+v-fjcc664hjwaneztkrizj.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>  
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/atlanta-braves/mens-nike-ronald-acuna-jr-navy-atlanta-braves-alternate-replica-player-name-jersey_pi3592000_altimages_ff_3592489-f4865d1826cb6eb2173falt2_full.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/atlanta-braves/mens-nike-ronald-acuna-jr-white-atlanta-braves-home-replica-player-name-jersey_pi3592000_altimages_ff_3592490-dd5738a67823c44047cbalt1_full.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/san-diego-padres/womens-wear-by-erin-andrews-white/gold-san-diego-padres-color-block-full-zip-windbreaker-jacket_ss5_p-201091161+pv-2+u-wxm2jmycuozbtf2ksspp+v-mpo3xn00g9shvbssssgu.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/los-angeles-dodgers/mens-nike-royal-los-angeles-dodgers-authentic-collection-full-zip-bomber-jacket_ss5_p-200143706+u-5w3uvybn28ceye7mduzk+v-lpfxryzvw9zeshx0mvnt.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/seattle-mariners/julio-rodr%C3%ADguez-seattle-mariners-autographed-bat-art-by-stadium-custom-kicks-limited-edition-number-1-of-1-xp14005699_ss5_p-200875318+pv-1+u-x9kzainjs3ip0wi41ph8+v-v01wx0zqxjbn7eeelha0.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/new-york-yankees/mens-nike-navy-new-york-yankees-authentic-collection-practice-performance-pullover-hoodie_ss5_p-200143884+u-tzaaq21v61adfyrl54n7+v-svyczf4ageu50fjlistj.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/san-francisco-giants/mens-nike-cream-san-francisco-giants-home-replica-custom-jersey_pi3811000_altimages_ff_3811567-8458644c73efe73ff63falt3_full.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/baltimore-orioles/mens-nike-adley-rutschman-white-baltimore-orioles-home-limited-player-jersey_ss5_p-200251553+pv-2+u-vofffdvioi9bkvizvsfc+v-upfpwxrvk2hcld1nw54l.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/atlanta-braves/ronald-acu%C3%B1a-jr-atlanta-braves-autographed-louisville-slugger-game-model-bat-with-40/70-club-inscription_ss5_p-201055202+pv-1+u-kxnuhycxn0hzsgpxbhsc+v-ewq3tpfg2dj4ktob5blt.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/chicago-cubs/chicago-cubs-art-glass-wall-clock_pi692000_ff_692246_full.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/chicago-cubs/toddler-fanatics-branded-royal-chicago-cubs-field-ball-t-shirt-and-shorts-set_ss5_p-201056096+u-5ukfvsko88vgsucglbr3+v-a5aovqj7owzu2leexdj8.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/louisville-bats/mens-under-armour-navy-louisville-bats-tech-t-shirt_pi5327000_altimages_ff_5327684-171782ef65724d92c727alt2_full.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/philadelphia-phillies/youth-mitchell-and-ness-lenny-dykstra-burgundy-philadelphia-phillies-cooperstown-collection-mesh-batting-practice-jersey_pi3288000_altimages_ff_3288846-fc24ba4cac7866cac11ealt3_full.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/oakland-athletics/mens-nike-green-oakland-athletics-alternate-replica-team-jersey_pi3588000_altimages_ff_3588477-39c06971bf0b047a148calt2_full.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/colorado-rockies/mens-nike-charlie-blackmon-purple-colorado-rockies-alternate-replica-player-name-jersey_pi3592000_ff_3592539-12bfa171b6528aff88d0_full.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/san-francisco-giants/mens-nike-brandon-crawford-white-san-francisco-giants-city-connect-replica-player-jersey_pi4887000_ff_4887529-67c05edbdb343fb7b17c_full.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/houston-astros/houston-astros-34-signature-hardwood-bat_pi4154000_altimages_ff_4154319-43cb0bbf84bd506b8f7aalt1_full.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/pittsburgh-pirates/pittsburgh-pirates-22oz-canyon-water-bottle_pi4781000_altimages_ff_4781292-f6bf3a025e221aa8f440alt1_full.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/miami-marlins/mens-nike-white-miami-marlins-home-limited-custom-jersey_ss5_p-200500506+pv-2+u-cphyl0wujh0gf3f3obue+v-rlddfohotudaiipraxpm.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/miami-marlins/mens-new-era-black-miami-marlins-authentic-collection-on-field-low-profile-59fifty-fitted-hat_pi3325000_altimages_ff_3325916-2bf9b730b300b4dd0cc6alt1_full.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/carlton-fisk-boston-red-sox-autographed-baseball-and-mahogany-baseball-display-case_pi2376000_ff_2376934_full.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/mlb-merchandise/2023-topps-chrome-logofractor-baseball-mega-box_ss5_p-201180195+u-7eoggs3a3bfbqzqal16w+v-jsdxhqutvszzk4aco4yf.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/seattle-mariners/mens-nike-julio-rodriguez-aqua-seattle-mariners-official-replica-player-jersey_ss5_p-200030243+pv-2+u-xnvfuqrt7mg9qt5h3f55+v-6xddf97w9gjkmbzlsynb.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/texas-rangers/mens-new-era-texas-rangers-light-blue/royal-on-field-authentic-collection-59fifty-fitted-hat_pi3757000_ff_3757331-7b70749eb1e2920d4973_full.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/texas-rangers/texas-rangers-wood-design-10000-mah-portable-power-pack_pi5145000_ff_5145105-76e2d31246a89233b95f_full.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/minnesota-twins/mens-nike-royce-lewis-white-minnesota-twins-replica-player-jersey_ss5_p-200688998+u-okssbiigzdzcmizdqlx3+v-3bowd0jkgswho0isjetr.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/minnesota-twins/mens-nike-royce-lewis-white-minnesota-twins-replica-player-jersey_ss5_p-200688998+u-okssbiigzdzcmizdqlx3+v-3bowd0jkgswho0isjetr.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/milwaukee-brewers/milwaukee-brewers-2-pack-team-pride-button-pot-set_pi4617000_ff_4617846-e5e85f1978e72a4ce6b9_full.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/cleveland-guardians/cleveland-guardians-10oz-banded-rocks-glass_pi4886000_ff_4886332-2cd73e0efff1bd96b78b_full.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/arizona-diamondbacks/mens-fanatics-branded-black-arizona-diamondbacks-cooperstown-collection-wahconah-t-shirt_pi2740000_ff_2740149c_full.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/washington-nationals/mens-nike-gray-washington-nationals-city-connect-replica-team-jersey_ss5_p-200105915+u-rzxevcnp3ucmxouhyqbd+v-jjvsxnfssrxa6lfiiqmt.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/kansas-city-royals/mens-nike-light-blue-kansas-city-royals-authentic-collection-city-connect-practice-performance-pullover-hoodie_ss5_p-200146546+pv-2+u-uyxndwtvcvmclf2dwysf+v-py8arui0q5qtdabybrvo.jpg?_hv=2&w=900" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/new-york-mets/sporticulture-new-york-mets-diamond-art-craft-kit_pi5150000_ff_5150497-4c2ce90a33805f6b3a4d_full.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+            <div class="card-baseball-content">
+                <img src="https://fanatics.frgimages.com/cleveland-guardians/cleveland-guardians-team-uniform-coaster-set_pi4904000_ff_4904728-90b635cafe3a1f3359cd_full.jpg?_hv=2&w=340" alt="Phily Philies">
+                <div>
+                    <h4>50$</h4>
+                    <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <div id="shoes">
+            <h2>Sport Shoes</h2>
+            <div class="shoes-cards">
+                <div class="shoes-card">
+                    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c307e097a0e7438eb6f5af150181fe43_9366/D.O.N._Issue_4_Basketball_Shoes_Black_HR0714_01_standard.jpg" alt="">
+                    <div>
+                        <p>D.O.N Adidas shoes</p>
+                        <p>15.000F</p>
+                    </div>
+                    <a href="https://www.adidas.com/us/d.o.n.-issue-4-basketball-shoes/HR0714.html" target="_blank">buy now</a>
+                </div>
+
+                <div class="shoes-card">
+                    <img src="https://underarmour.scene7.com/is/image/Underarmour/3026282-100_PAIR?rp=standard-30pad|pdpZoomDesktop&scl=0.50&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=850,850" alt="">
+                    <div>
+                        <p>SC UA shoes</p>
+                        <p>20.000F</p>
+                    </div>
+                    <a href="https://www.underarmour.co.th/en-th/c/stephen-curry-collection/shoes/" target="_blank">buy now</a>
+                </div>
+
+                <div class="shoes-card">
+                    <img src="https://www.ypsoccer.net/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/n/i/nike-air-zoom-mercurial-superfly-9-elite-cr7-2022-signature-white-metallic-copper-concord-2.jpg" alt="">
+                    <div>
+                        <p>CR7 WC 2022 Boots</p>
+                        <p>21.000F</p>
+                    </div>
+                    <a href="https://www.nike.com/gb/w/mens-football-shoes-1gdj0znik1zy7ok" target="_blank">buy now</a>
+                </div>
+
+                <div class="shoes-card">
+                    <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0fd07f3b944f4930856bcafcde1e5d9d_9366/X_Crazyfast_Messi.1_Firm_Ground_Boots_Silver_IE4079_HM1.jpg" alt="">
+                    <div>
+                        <p>Messi Adidas Boots</p>
+                        <p>20.500F</p>
+                    </div>
+                    <a href="https://www.adidas.com/us/d.o.n.-issue-4-basketball-shoes/HR0714.html" target="_blank">buy now</a>
+                </div>
+
+                <div class="shoes-card">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d7d829f6-66bb-4b21-8ee1-34aaf8a6e4fe/chaussures-a-pointes-de-running-de-fond-air-zoom-victory-89dG3l.png" alt="">
+                    <div>
+                        <p>Nike Air Zoom Victory</p>
+                        <p>9.700F</p>
+                    </div>
+                    <a href="https://www.adidas.com/us/d.o.n.-issue-4-basketball-shoes/HR0714.html" target="_blank">buy now</a>
+                </div>
+            </div>
+    </div>
+
+    
+    <div class="sports-team football">
+        <div class="sports-team-image football-image">
+            <img src="https://fanatics.frgimages.com/kansas-city-chiefs/mens-nike-patrick-mahomes-red-kansas-city-chiefs-super-bowl-lviii-game-jersey_ss5_p-201164792+pv-1+u-g3ejsm3i2qfzw1ibvfhz+v-3afuf5brsmqjj9aimcam.jpg?_hv=2&w=900" alt="ohtani">
+        </div>
+        <div class="sports-team-content football-content">
+            <h3>AMERICAN FOOTBALL TEAMS</h3>
+            <p>If you love American Football, you'll find your pleasure</p>
+        </div> 
+    </div>
+
+        
+    <div class="card-baseball card-football">
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/kansas-city-chiefs/mens-new-era-cream/black-kansas-city-chiefs-super-bowl-lviii-champions-locker-room-low-profile-9fifty-adjustable-hat_ss5_p-201204324+pv-1+u-ivkcor47owfxpn3fftlr+v-h2alrx6xt9talswtppgj.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/san-francisco-49ers/mens-nike-christian-mccaffrey-tundra-white-san-francisco-49ers-fashion-game-jersey_ss5_p-201064585+pv-2+u-j4gts4zvqoozbse9edgo+v-apjjs7jfqevv5z8l21xk.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>  
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/dallas-cowboys/mojo-black-dallas-cowboys-personalized-campus-laptop-backpack_pi4970000_altimages_ff_4970293-44581ab6588578175edcalt1_full.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/miami-dolphins/mens-starter-white/aqua-miami-dolphins-vintage-satin-full-snap-varsity-jacket_ss5_p-201123854+pv-6+u-jvzi0oovmtij2ug0pgcz+v-esdpfjsykgrpyqobkst3.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/new-orleans-saints/mens-fanatics-branded-gold/black-new-orleans-saints-t-shirt-and-adjustable-hat-combo-pack_ss5_p-5228015+u-lkjrfqpfm1udibec7bfp+v-stjcwed0vbcf1rr4abq9.jpg?_hv=2&w=340" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/detroit-lions/riddell-detroit-lions-revolution-speed-mini-football-helmet_pi2792000_ff_2792036_full.jpg?_hv=2&w=340" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/atlanta-falcons/mens-nike-drake-london-black-atlanta-falcons-player-game-jersey_pi4868000_ff_4868450-9f69348d0f4268d6bd17_full.jpg?_hv=2&w=340" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/arizona-cardinals/mens-junk-food-heathered-gray-arizona-cardinals-helmet-t-shirt_pi4534000_ff_4534204-373b2816005a527f035d_full.jpg?_hv=2&w=340" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/shield-merchandise/wilson-the-duke-official-nfl-leather-game-football_pi3909000_ff_3909984-340656bcce06e0b35806_full.jpg?_hv=2&w=340" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/cincinnati-bengals/mens-nike-joe-burrow-white-cincinnati-bengals-vapor-untouchable-limited-jersey_ss5_p-5030618+u-z9tbdmzgmntem4phtiwd+v-sqr0pk7xlcd2wicndyqs.jpg?_hv=2&w=340" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://www.thespeedycheetah.com/cdn/shop/products/Riddell-Speed-Auth-Bengals-On-Field-Alt---8058019_1024x1024.jpg?v=1674089960" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/washington-commanders/mens-fanatics-branded-burgundy-washington-commanders-core-fundamental-cuffed-knit-hat_ss5_p-200003798+u-tympz9yuxcdgw9yhvvck+v-gpl6kdfo3ajmgxbiuk4u.jpg?_hv=2&w=340" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/los-angeles-rams/los-angeles-rams-matthew-stafford-fanatics-egift-card-$10-$500_pi4990000_ff_4990884-21033485ed3f1ecd974a_full.jpg?_hv=2&w=340" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/new-york-giants/mens-mitchell-and-ness-royal-new-york-giants-team-og-20-anorak-vintage-logo-quarter-zip-windbreaker-jacket_ss5_p-201154528+u-fbfn01jxe6q1vpb5q98s+v-4bphdklrxzop4udjclbw.jpg?_hv=2&w=340" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/minnesota-vikings/justin-jefferson-minnesota-vikings-12-player-standee-figurine_ss5_p-200940276+u-kw8dqevyltqndcdktxs1+v-yyqxwyu4lvf26fndfsem.jpg?_hv=2&w=340" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/tampa-bay-buccaneers/mens-nike-mike-evans-orange-tampa-bay-buccaneers-throwback-game-jersey_ss5_p-5257813+pv-3+u-petx440qi8r7mjlj9zmw+v-gztysowkhicv6ezcb39h.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/new-york-jets/mens-new-era-cream-new-york-jets-throwback-corduroy-golfer-snapback-hat_ss5_p-200390426+u-ogy7z84yntc9csavpaoo+v-9fkjwwf1ef1jmeklqei3.jpg?_hv=2&w=340" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/philadelphia-eagles/riddell-philadelphia-eagles-revolution-speed-mini-football-helmet_pi2517000_ff_2517611_full.jpg?_hv=2&w=340" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/chicago-bears/unisex-nike-anthracite-chicago-bears-zoom-pegasus-40-running-shoe_ss5_p-5261372+u-5nbyiz6vgdtkix30k0zg+v-rd7msv5fhlqythbjplx2.jpg?_hv=2&w=340" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/green-bay-packers/mens-nike-jordan-love-white-green-bay-packers-fashion-game-jersey_ss5_p-201166617+u-dyjvgfts4edw9ocmqtx9+v-ikercphn7wyfe3jc5bvz.jpg?_hv=2&w=340" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/buffalo-bills/imperial-buffalo-bills-18-x-18-magnetic-chess-set_ss5_p-200654901+pv-1+u-wz42ld8m3crolubycbbm+v-lvkc4awsiwd2v9nomi9m.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>       
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/jacksonville-jaguars/mens-fanatics-branded-teal/black-jacksonville-jaguars-t-shirt-and-adjustable-hat-combo-pack_ss5_p-5228036+pv-1+u-ydddeh2lojhjtaazvtaa+v-nnxtabivwb9rpwcafzk6.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://www.spiralfootball.fr/3352-thickbox_default/epauliere-de-football-americain-xenith-velocity-2-tous-postes.jpg" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/baltimore-ravens/mens-nike-kyle-hamilton-purple-baltimore-ravens-player-game-jersey_pi4868000_altimages_ff_4868455-e29c3e23658ffcee4139alt3_full.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://www.thespeedycheetah.com/cdn/shop/files/seattle-seahawks-speedflex-authentic-football-helmet-3_1200x630.jpg?v=1696888205" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/indianapolis-colts/mens-new-era-gray-indianapolis-colts-active-camo-59fifty-fitted-hat_ss5_p-200390582+pv-1+u-ypel7l4n9vht2ujl1jet+v-cnuguj8dqczewrsbt1s9.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/tennessee-titans/tennessee-titans-team-pride-string-art-craft-kit_pi3519000_ff_3519831-b38e6bb8e6b43d733886_full.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/new-england-patriots/tom-brady-and-rob-gronkowski-new-england-patriots-autographed-riddell-1982-1989-throwback-speed-flex-helmet_ss5_p-200894574+pv-1+u-hbkn5pyurardcymefryo+v-p8d3u7ytxpspj0bpjjnv.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/san-francisco-49ers/the-northwest-company-san-francisco-49ers-48-x-60-commemorative-woven-tapestry-throw_pi3378000_ff_3378831-05142809f3ae10177ee5_full.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/seattle-seahawks/pegasus-seattle-seahawks-22-plushie-mascot-pillow_ss5_p-200170429+pv-1+u-td1kgda2rxclbvarkkp2+v-juaigi7kvcxsknv93ln6.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/detroit-lions/mens-antigua-light-blue-detroit-lions-bright-quarter-zip-pullover-top_ss5_p-201102128+pv-1+u-srmlvorciohqo6m4kuq1+v-v2qezzubl3caq9yliv3o.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/nflpa/youth-islide-x-breakingt-christian-mccaffrey-black-nflpa-run-cmc-slide-sandals_pi5269000_ff_5269895-1c6d5c7fe1cfcbd617a2_full.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://dks.scene7.com/is/image/GolfGalaxy/20WILANFLTHDKGMBLFTB?qlt=70&wid=600&fmt=pjpeg" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fathead.com/cdn/shop/products/614973f78cca374fe519674dec9a9eca98ee7b40.png?v=1629115095&width=1946" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/los-angeles-chargers/los-angeles-chargers-18oz-coffee-tumbler-with-silicone-grip_ss5_p-5334441+pv-1+u-ex3gbboirhxrlqdxqcbw+v-vlwwoevmnivypynxlj0m.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+        <div class=" card-baseball-content">
+            <img src="https://fanatics.frgimages.com/shield-merchandise/riddell-nfl-mini-helmet-tracker-set_ss5_p-5358180+pv-1+u-lf21jdiyorgspktdgybd+v-c1ds6yzvpq3hqqpuk0d7.jpg?_hv=2&w=900" alt="Phily Philies">
+            <div>
+                <h4>50$</h4>
+                <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
+            </div>
+        </div>
+                   
+    </div>  
+    <button class="read-more-btn btn-button" type="button"><i class='bx bx-chevrons-down'></i></button>
+    <button class="read-less-btn btn-button" type="button"><i class='bx bx-chevrons-up'></i></button>
+
+              
+
+    <div id="shoes" class="woman">
+            <h2 id="Woman">Woman Jersey</h2>
+            <div class="shoes-cards">
+                <div class="shoes-card">
+                    <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/9663d0e5-fc23-49bb-88d6-1df2e77dd2f1/uswnt-2022-23-stadium-home-womens-dri-fit-soccer-jersey-5WmXdB.png" alt="https://www.nike.com/t/uswnt-2022-23-stadium-home-womens-dri-fit-soccer-jersey-5WmXdB">
+                    <div>
+                        <p>USAWNT World cup jesrey</p>
+                        <p>9.000F</p>
+                    </div>
+                    <a href="https://www.triumph-sports.com/shop/women-girls/cycling-women/women-cycling-jerseys/comfortable-exclusive-bicycling-jersey-for-women/" target="_blank">buy now</a>
+                </div>
+
+                <div class="shoes-card">
+                    <img src="https://www.triumph-sports.com/wp-content/uploads/2019/06/30-1-2.jpg" alt="">
+                    <div>
+                        <p>Cycling woman jersey</p>
+                        <p>3.500F</p>
+                    </div>
+                    <a href="https://www.triumph-sports.com/shop/women-girls/cycling-women/women-cycling-jerseys/comfortable-exclusive-bicycling-jersey-for-women/" target="_blank">buy now</a>
+                </div>
+
+                <div class="shoes-card">
+                    <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/09ebb735-3ac4-40ce-879e-4a03c43a08da/sabrina-ionescu-liberty-rebel-edition-dri-fit-wnba-victory-jersey-Qb39Mf.png" alt="">
+                    <div>
+                        <p>New York liberty Jersey</p>
+                        <p>6.500F</p>
+                    </div>
+                    <a href="https://www.nike.com/t/sabrina-ionescu-liberty-rebel-edition-dri-fit-wnba-victory-jersey-Qb39Mf" target="_blank">buy now</a>
+                </div>
+
+                <div class="shoes-card">
+                    <img src="https://media.handball-store.com/catalog/product/cache/small_image/318x/9df78eab33525d08d6e5fb8d27136e95/x/m/xm54_u-q.jpeg" alt="">
+                    <div>
+                        <p>Women's handball jerseys</p>
+                        <p>4.000F</p>
+                    </div>
+                    <a href="https://handball-store.com/handball-wear/womens-wear/jerseys" target="_blank">buy now</a>
+                </div>
+
+                <div class="shoes-card">
+                    <img src="https://un1tus.com/cdn/shop/products/f-vjvls-3010-tipp-fv_2.jpg?v=1611512807" alt="">
+                    <div>
+                        <p>Women's Volleyball Jersey Long Sleeve</p>
+                        <p>3.000F</p>
+                    </div>
+                    <a href="https://sharksportswear.com/products/custom-long-sleeve-volleyball-jersey-womens-pro" target="_blank">buy now</a>
+                </div>
+            </div>
+    </div>
+    <!-- Principal Section End -->
+
+
+    <!-- Foot of the page -->
+    <div class="contact">
+        <h1>Contact</h1>
+        <form action="">
+            <input type="text" name="fname" id="fname" placeholder="First Name">
+
+            <input type="text" name="lname" id="lname" placeholder="Last Name">
+
+             <br>
+
+            <input type="email" name="email" id="email" placeholder="E-mail">
+
+            <input type="password" name="password" id="password" placeholder="Password">
+
+            <br>
+
+            <label for="message">Text Me</label><br>
+            <textarea name="message" id="message" cols="25" rows="10" placeholder="Message"></textarea>
+            <br>
+            <button id="sent">Sent</button>
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/sportshop.id" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sportshop.id" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC-9999999999999" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.pinterest.com/sportshop.id" target="_blank"><i class="fab fa-pinterest"></i></a>
+        </div>
+
+        <div class="info">
+            <h4>Information</h4>
+            <p>Promo Terms and Exclusions</p>
+            <p>About me</p>
+            <p>Contact Us</p>
+            <p>Satisfaction Guarantee</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+            <p>Site Map</p>
+            <p>Safe Shopping</p>
+        </div>
+
+        <div class="brand">
+            <h4>Brand</h4>
+            <p>Adidas</p>
+            <p>Triumph</p>
+            <p>New Balance</p>
+            <p>Nike</p>
+            <p>Nike Air Zoom</p>
+            <p>USAWNT</p>
+            <p>Puma</p>
+        </div>
+
+        
+        <h2>SportShop</h2>
+    </footer>
+    <p id="copy"><span>ALL Right <i class='bx bx-copyright' ></i>Copyright </span><span id="date"></span></p>
+    <!-- End Foot of the page -->
+
+
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

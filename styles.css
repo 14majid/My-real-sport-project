@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: myFont;
+    src: url(font/flick-font/FlickSs1Demo-lgzaw.ttf);
+}
+@font-face {
+    font-family: mySecondFont;
+    src: url(font/sport-game-font/SportGame-K7nWo.otf);
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #1E123A;
+    --second-color: #e80f46;
+    --gradient: linear-gradient(#1E123A, #e80f46);
+    --pad: 64px 96px
+}
+
+.color-change {
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/*********** navigation bar ***********/
+nav {
+    padding: 8px 96px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    top: 0;
+}
+nav h1 {
+    cursor: pointer;
+    margin: auto 0;
+    font-family: mySecondFont;
+    color: var(--main-color);
+}
+nav .onglet {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto 0;
+}
+
+.dropdown {
+    padding-top: 15px;
+}
+
+.dropdown-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dropbtn {
+    display: none;
+    background: none;
+}
+.close-button {
+    margin-bottom: 16px;
+}
+
+
+nav .onglet .link {
+    margin: 0px 5px;
+}
+nav .onglet p a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+nav .onglet p a:hover {
+    text-decoration: underline;
+}
+
+nav .onglet input {
+    margin: 5px 10px;
+    padding: 7px;
+    border: none;
+    border: 1px solid #000;
+    border-radius: 5px;  
+    font-size: 16px;
+}
+
+
+.icons {
+    margin-left: 5px;
+}
+.fa-xmark {
+    display: none;
+}
+/**************** navigation bar End ************************/
+
+
+
+/*********************** Header debut ****************************/
+header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0 64px;
+}
+.brand-league {
+    /* width: 100%; */
+    overflow: hidden;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.brand-league-logo {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-league-logo img {
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 5px #000;
+    padding: 16px;
+    margin-right: 8px;
+    width: 50px;
+    height: 70px;
+}
+.brand-league-logo:nth-child(2) img {
+    width: 40px;
+}
+.brand-league-logo:nth-child(3) img,
+.brand-league-logo:nth-child(4) img {
+    width: 120px;
+}
+
+.brand-league-logo:nth-child(5) img {
+    width: 100px;
+}
+
+.brand-league-logo p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    /* font-family: mySecondFont; */
+}
+
+svg {
+    width: 100px;
+    height: 100px;
+}
+header h1 {
+    font-size: 50px;
+    color: #fff;
+    font-family: myFont;
+    background-image: var(--gradient);
+    max-width: 450px;
+}
+header button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(22, 21, 21, 0.22);
+}
+
+header button:hover {
+    background-color: rgba(22, 21, 21, 0.55);
+}
+
+
+/********************** Header End */
+
+
+
+
+
+/***************************** All card */
+
+.container-shop {
+    display: none;
+    padding-bottom: 64px;
+    color: #fff;
+}
+
+.buttons {
+    margin: 0 0px 16px 16px;
+    padding-top: 16px;
+}
+.buttons button {
+    background-color: #fff;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: none;
+    transition: .3s;
+}
+.buttons button:hover {
+    background-color: #c42b2b;
+    color: #fff;
+    font-size: 24px;
+}
+
+
+.cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    max-width: 1320px;
+    padding-bottom: 16px;
+    background-image: var(--gradient);
+    transition: scroll-left 0.5s ease;
+}
+.cards .card{
+    max-width: 250px;
+    margin: 0 20px;
+}
+.cards .card div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards .card div p{
+    font-weight: 600;
+}
+
+.cards .card img{
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+}
+.cards .card a {
+    color: #fff;
+    text-decoration: none;
+}
+.cards .card a:hover {
+    text-decoration: underline;
+}
+
+
+.main-body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--second-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-body img {
+    width: 100%;
+    height: 100%;
+}
+.main-body-bod {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 32px 64px;
+}
+.main-body h2 {
+    color: #fff;
+    padding: 24px;
+    margin: 0;
+}
+
+.main-body button {
+    border: 1px solid #fff;
+    cursor: pointer;
+    padding: 10px 25px;
+}
+
+.video {
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+.sports-team {
+    padding: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.sports-team .sports-team-image {
+    flex: 2;
+    align-self: flex-start;
+}
+.sports-team .sports-team-image img {
+    width: 100%;
+    height: 100%;
+}
+.sports-team .sports-team-content {
+    flex: 1;
+    padding-bottom: 168px;
+}
+.sports-team .sports-team-content h3 {
+    font-size: 48px;
+}
+.sports-team .sports-team-content button {
+    cursor: pointer;
+    padding: 13px 32px;
+    border-radius: 15px;
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 17px;
+    color: #000;
+    background-color: #fff;
+}
+.sports-team .sports-team-content button:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+
+.global-base {
+    display: none;
+}
+.card-baseball {
+    padding: 64px 56px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.card-baseball .card-baseball-content {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-baseball .card-baseball-content img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.card-baseball .card-baseball-content {
+   max-width: 300px;
+}
+
+.card-global-football {
+    text-align: center;
+}
+
+
+
+.card-football {
+    text-align: left;
+    height: 3000px;
+    overflow: hidden;
+    transition: height 2s ease;
+}
+
+
+.btn-button {
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--main-color);
+    font-size: 24px;
+    padding: 8px 20px;
+    margin: 64px 4px 24px 8px;
+}
+
+
+
+
+#shoes {
+    margin-top: 64px;
+}
+
+#shoes h2 {
+    margin-left: 20px;
+}
+
+#shoes .shoes-cards{
+    color: #fff;
+    background-image: var(--gradient);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#shoes .shoes-card{
+    max-width: 220px;
+    margin: 0 20px 20px;
+}
+
+
+#shoes .shoes-card div p{
+    font-weight: 600;
+}
+
+#shoes .shoes-card img{
+    object-fit: cover;
+    height: 200px;
+    width: 220px;
+}
+#shoes .shoes-card a {
+    color: #fff;
+    text-decoration: none;
+}
+#shoes .shoes-card a:hover {
+    text-decoration: underline;
+}
+
+/* All card End */
+
+/* Principal End */
+
+
+
+/* Foot of the page */
+
+.contact {
+    margin: 100px 0;
+    text-align: center;
+}
+
+
+input {
+    font-size: 20px;
+    width: 300px;
+    border: .5px solid #000;
+    border-radius: 5px;
+    padding: 13px;
+    margin: 20px;
+}
+
+textarea {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#sent {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10px 3px 6px/ 5px 2px;
+    background-color: #fff;
+    transition: color .5s;
+}
+
+#sent:hover {
+    color: #fff;
+    background-color: var(--main-color);
+}
+/* End Foot of the page */
+
+
+footer {
+    background-color: var(--second-color);
+    color: #fff;
+    text-align: center;
+    padding: 80px 64px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer h2 {
+    font-size: 32px;
+}
+
+.social-icons {
+    align-self: flex-end;
+}
+
+.social-icons a {
+    padding: 8px;
+    color: #fff;
+}
+
+#copy {
+    background-color: var(--second-color);
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+#copy span {
+    opacity: .5;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .sports-team {
+        padding: 48px;
+    }
+    .sports-team .sports-team-content h3 {
+        font-size: 36px;
+    }
+}
+
+
+@media screen and (max-width: 681px) {
+    nav {
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+
+    .dropbtn {
+        display: block;
+        cursor: pointer;
+        padding: 10px 0;
+        border: none;
+        margin: 0;
+        border-radius: 0;
+    }
+    .dropbtn i {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .fa-xmark {
+        padding-top: 15px;
+        display: block;
+        font-size: 20px;
+    }
+    .dropdown-content {
+        margin-top: 34px;
+        width: 0;
+        position: fixed; 
+        border-top: 1px solid #efefef;
+        left: 0;
+        background-color: #fff;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: width .5s;
+    }
+    
+    .dropdown-content p:nth-child(odd){
+        display: block;
+        margin: 24px;
+        background-color: #efefef;
+    }
+    .dropdown-content p:hover {
+        cursor: pointer;
+        background-color: #ddd;
+    }
+
+    nav .onglet input {
+        display: none;
+    }
+    .icons {
+        margin: 5px;
+        padding-top: 3px;
+    }
+
+    .brand-league-logo img {
+        width: 30px;
+        height: 50px;
+    }
+    .brand-league-logo:nth-child(2) img {
+        width: 20px;
+    }
+    .brand-league-logo:nth-child(3) img,
+    .brand-league-logo:nth-child(4) img {
+        width: 100px;
+    }
+    
+    .brand-league-logo:nth-child(5) img {
+        width: 80px;
+    }
+
+    .sports-team {
+        padding: 48px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-baseball .card-baseball-content img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-baseball .card-baseball-content {
+        max-width: 200px;
+     }
+
+    footer {
+        padding: 72px 16px;
+    }
+}
+
+
+
+@media screen and (max-width: 370px) {
+    .icons {
+        margin: 5px;
+        padding-top: 3px;
+    }
+
+    .brand-league-logo img {
+        width: 20px;
+        height: 40px;
+    }
+    .brand-league-logo:nth-child(2) img {
+        width: 20px;
+    }
+    .brand-league-logo:nth-child(3) img,
+    .brand-league-logo:nth-child(4) img {
+        width: 40px;
+    }
+    
+    .brand-league-logo:nth-child(5) img {
+        width: 30px;
+    }
+
+    .card-baseball {
+        padding: 64px 0;
+    }
+}
