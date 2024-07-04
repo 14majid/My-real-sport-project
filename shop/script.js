@@ -1,3 +1,15 @@
+const openBtn = document.querySelector('.dropbtn');
+const closeBtn = document.querySelector('.close-button');
+const contentBtn = document.querySelector('.dropdown-content');
+
+openBtn.addEventListener('click', () => {
+  contentBtn.style.width = '100%';
+});
+closeBtn.addEventListener('click', () => {
+  contentBtn.style.width = '0';
+});
+
+
 const body = document.querySelector('body');
 const navOng = document.querySelectorAll('nav .onglet p a');
 const moonSun = document.querySelector('#moon-sun');
@@ -21,6 +33,7 @@ moonSun.addEventListener('click', () => {
 
 
 const searchBar = document.querySelector('#search')
+const submitSearch = document.querySelector('#submit')
 
 function filterAndDisplayBrand(brand) {
   hideAllBrands(); // Hide all brands
@@ -28,7 +41,7 @@ function filterAndDisplayBrand(brand) {
 }
 
 function trye() {
-  const searchText = searchBar.value
+  const searchText = searchBar.value.toLowerCase();
 
   if (searchText === 'cycling') {
     filterAndDisplayBrand(cycling)
@@ -48,28 +61,15 @@ function trye() {
   }
 }
 
-trye()
+searchBar.addEventListener('keyup', (evt) => {
+  if (evt.key === 'Enter') {
+    trye();
+  }
+});
 
-// searchBar.addEventListener('keyup', (evt) => {
-//   const searchText = evt.target.value.toLowerCase()
-
-//   if (searchText === 'cycling') {
-//     filterAndDisplayBrand(cycling)
-//   }
-//   if (searchText === 'basket') {
-//     filterAndDisplayBrand(basketBall)
-//   }
-//   if (searchText === 'rugby') {
-//     filterAndDisplayBrand(rugby)
-//   }
-//   if (searchText === 'hokey') {
-//     filterAndDisplayBrand(iceHokey)
-//   }
- 
-//   if (searchText === 'athletisme') {
-//     filterAndDisplayBrand(athletisme)
-//   }
-// })
+submitSearch.addEventListerner('click', () => {
+  trye();
+})
 
 const allBrand = document.querySelector('.all')
 const cyclingLetter = document.querySelector('.cycling-letter')
@@ -78,7 +78,6 @@ const rugbyLetter = document.querySelector('.rugby-letter')
 const iceHokeyLetter = document.querySelector('.ice-hokey-letter')
 const athleLetter = document.querySelector('.athletisme-letter')
 
-const nationalTeam = document.querySelector('.men-natio-team')
 
 const cycling = document.querySelectorAll('[data-cycling]')
 const basketBall = document.querySelectorAll('[data-basket-ball]')
@@ -86,7 +85,6 @@ const rugby = document.querySelectorAll('[data-rugby]')
 const iceHokey = document.querySelectorAll('[data-ice-hokey]')
 const athletisme = document.querySelectorAll('[data-athle]')
 
-const natiTeam = document.querySelector('.national-team-jersey')
 
 function hideAllBrands() {
   cycling.forEach(item => { item.style.display = 'none'; });
@@ -106,13 +104,9 @@ allBrand.addEventListener('click', () => {
   showBrand(rugby) 
   showBrand(iceHokey)
   showBrand(athletisme)
-  natiTeam.style.display = 'none'
 })
 
-nationalTeam.addEventListener('click', () => {
-  hideAllBrands()
-  natiTeam.style.display = 'block'
-})
+
 
 cyclingLetter.addEventListener('click', () => {
   hideAllBrands()

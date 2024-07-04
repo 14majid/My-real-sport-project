@@ -291,3 +291,52 @@ footer h2 {
     }
   }
   
+
+  @media screen and (max-width: 681px) {
+    nav {
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+
+    .dropbtn {
+        display: block;
+        cursor: pointer;
+        padding: 10px 0;
+        border: none;
+        margin: 0;
+        border-radius: 0;
+    }
+    .dropbtn i {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .fa-xmark {
+        padding-top: 15px;
+        display: block;
+        font-size: 20px;
+    }
+    .dropdown-content {
+        z-index: 2;
+        margin-top: 34px;
+        width: 0;
+        position: fixed; 
+        border-top: 1px solid #efefef;
+        left: 0;
+        background-color: #fff;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: width .5s;
+    }
+    
+    .dropdown-content p:nth-child(odd){
+        display: block;
+        margin: 24px;
+        background-color: #efefef;
+    }
+    .dropdown-content p:hover {
+        cursor: pointer;
+        background-color: #ddd;
+    }
+}
