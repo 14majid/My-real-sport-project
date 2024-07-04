@@ -300,6 +300,7 @@ footer h2 {
         font-size: 20px;
     }
     .dropdown-content {
+        z-index: 2;
         margin-top: 34px;
         width: 0;
         position: fixed; 
