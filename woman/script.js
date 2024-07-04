@@ -1,3 +1,15 @@
+const openBtn = document.querySelector('.dropbtn');
+const closeBtn = document.querySelector('.close-button');
+const contentBtn = document.querySelector('.dropdown-content');
+
+openBtn.addEventListener('click', () => {
+  contentBtn.style.width = '100%';
+});
+closeBtn.addEventListener('click', () => {
+  contentBtn.style.width = '0';
+});
+
+
 const body = document.querySelector('body');
 const navOng = document.querySelectorAll('nav .onglet p a');
 const sphere = document.querySelector('#sphere');

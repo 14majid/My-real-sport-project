@@ -40,6 +40,7 @@ closeBtn.addEventListener('click', () => {
   contentBtn.style.width = '0';
 });
 
+
 const buttonLeft = document.querySelector('.buttons #next');
 const buttonRight = document.querySelector('.buttons #prev');
 buttonLeft.addEventListener('click', () => {
