@@ -56,37 +56,25 @@ function filterSearch() {
 searchBar.addEventListener('keyup', (evt) => {
   if (evt.key === 'Enter') {
     filterSearch();
+    localStorage.setItem('showElementsAfterReload', searchBar.value);
+    location.reload();
   }
 });
 
 submitSearch.addEventListener('click', () => {
   filterSearch();
+  localStorage.setItem('showElementsAfterReload', searchBar.value);
+  location.reload();
 });
 
-// Event listener for 'keyup' on the search bar
-searchBar.addEventListener('keyup', (evt) => {
-  if (evt.key === 'Enter') {
-    filterSearch(); // Call the search function on Enter key press
-    localStorage.setItem('showElementsAfterReload', 'true'); // Set flag in localStorage
-    location.reload(); // Reload the page to show updated search results
-  }
-});
-
-// Event listener for the search submit button
-submitSearch.addEventListener('click', () => {
-  filterSearch(); // Call the search function on button click
-  localStorage.setItem('showElementsAfterReload', 'true'); // Set flag in localStorage
-  location.reload(); // Reload the page to show updated search results
-});
-
-window.addEventListener('DOMContentLoaded', function() {
-  var showElements = localStorage.getItem('showElementsAfterReload');
-  if (showElements === 'true') {
+window.addEventListener('DOMContentLoaded', () => {
+  const showElements = localStorage.getItem('showElementsAfterReload');
+  if (showElements) {
+    searchBar.value = showElements;
     filterSearch();
-    localStorage.removeItem('showElementsAfterReload'); // Clean up the flag
+    localStorage.removeItem('showElementsAfterReload');
   }
 });
-
 
 
 const allBrand = document.querySelector('.all');
