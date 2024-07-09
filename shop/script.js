@@ -53,15 +53,15 @@ function filterSearch() {
   }
 }
 
-// searchBar.addEventListener('keyup', (evt) => {
-//   if (evt.key === 'Enter') {
-//     filterSearch();
-//   }
-// });
+searchBar.addEventListener('keyup', (evt) => {
+  if (evt.key === 'Enter') {
+    filterSearch();
+  }
+});
 
-// submitSearch.addEventListener('click', () => {
-//   filterSearch();
-// });
+submitSearch.addEventListener('click', () => {
+  filterSearch();
+});
 
 // Event listener for 'keyup' on the search bar
 searchBar.addEventListener('keyup', (evt) => {
