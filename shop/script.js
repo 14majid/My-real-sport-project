@@ -53,15 +53,41 @@ function filterSearch() {
   }
 }
 
+// searchBar.addEventListener('keyup', (evt) => {
+//   if (evt.key === 'Enter') {
+//     filterSearch();
+//   }
+// });
+
+// submitSearch.addEventListener('click', () => {
+//   filterSearch();
+// });
+
+// Event listener for 'keyup' on the search bar
 searchBar.addEventListener('keyup', (evt) => {
   if (evt.key === 'Enter') {
-    filterSearch();
+    filterSearch(); // Call the search function on Enter key press
+    localStorage.setItem('showElementsAfterReload', 'true'); // Set flag in localStorage
+    location.reload(); // Reload the page to show updated search results
   }
 });
 
+// Event listener for the search submit button
 submitSearch.addEventListener('click', () => {
-  filterSearch();
+  filterSearch(); // Call the search function on button click
+  localStorage.setItem('showElementsAfterReload', 'true'); // Set flag in localStorage
+  location.reload(); // Reload the page to show updated search results
 });
+
+window.addEventListener('DOMContentLoaded', function() {
+  var showElements = localStorage.getItem('showElementsAfterReload');
+  if (showElements === 'true') {
+    filterSearch();
+    localStorage.removeItem('showElementsAfterReload'); // Clean up the flag
+  }
+});
+
+
 
 const allBrand = document.querySelector('.all');
 const cyclingLetter = document.querySelector('.cycling-letter');
