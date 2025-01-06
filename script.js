@@ -18,7 +18,7 @@ sphere.addEventListener('click', () => {
   }
 });
 
-const navH1 = document.querySelector('nav h1');
+const navH1= document.querySelector('nav h1');
 
 window.addEventListener('resize', () => {
   if (window.innerWidth < 682) {
