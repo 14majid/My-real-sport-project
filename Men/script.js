@@ -12,20 +12,20 @@ closeBtn.addEventListener('click', () => {
 
 const body = document.querySelector('body');
 const navOng = document.querySelectorAll('nav .onglet p a');
-const moonSun = document.querySelector('#moon-sun');
+const sphere = document.querySelector('#sphere');
 
 let isSun = false;
 
-moonSun.addEventListener('click', () => {
+sphere.addEventListener('click', () => {
   body.classList.toggle('color-change');
-  
+
   if (isSun) {
-    moonSun.innerHTML = "<i class='bx bxs-moon'></i>";
-    navOng.forEach(nav => { nav.style.color ='#1E123A'; }); // Fixed color value
+    sphere.innerHTML = "<i class='bx bxs-moon'></i>";
+    navOng.forEach(nav => { nav.style.color = '#1E123A'; }); // Fixed color value
     isSun = false;
   } else {
-    moonSun.innerHTML = "<i class='bx bxs-sun'></i>";
-    navOng.forEach(nav => { nav.style.color ='#fff'; });
+    sphere.innerHTML = "<i class='bx bxs-sun'></i>";
+    navOng.forEach(nav => { nav.style.color = '#fff'; });
     isSun = true;
   }
 });
@@ -90,7 +90,7 @@ function showBrand(brand) {
 allBrand.addEventListener('click', () => {
   showBrand(nike)
   showBrand(adidas)
-  showBrand(castore) 
+  showBrand(castore)
   showBrand(newB)
   showBrand(puma)
   natiTeam.style.display = 'none'
