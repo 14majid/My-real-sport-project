@@ -1,35 +1,3 @@
-const openBtn = document.querySelector('.dropbtn');
-const closeBtn = document.querySelector('.close-button');
-const contentBtn = document.querySelector('.dropdown-content');
-
-openBtn.addEventListener('click', () => {
-  contentBtn.style.width = '100%';
-});
-closeBtn.addEventListener('click', () => {
-  contentBtn.style.width = '0';
-});
-
-
-const body = document.querySelector('body');
-const navOng = document.querySelectorAll('nav .onglet p a');
-const sphere = document.querySelector('#sphere');
-
-let isSun = false;
-
-sphere.addEventListener('click', () => {
-  body.classList.toggle('color-change');
-  
-  if (isSun) {
-    sphere.innerHTML = "<i class='bx bxs-moon'></i>";
-    navOng.forEach(nav => { nav.style.color ='#1E123A'; }); // Fixed color value
-    isSun = false;
-  } else {
-    sphere.innerHTML = "<i class='bx bxs-sun'></i>";
-    navOng.forEach(nav => { nav.style.color ='#fff'; });
-    isSun = true;
-  }
-});
-
 
 
 const searchBar = document.querySelector('#search')

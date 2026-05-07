@@ -1,44 +1,3 @@
-const body = document.querySelector('body');
-const navOng = document.querySelectorAll('nav .onglet p a');
-const sphere = document.querySelector('#sphere');
-
-let isSun = false;
-
-sphere.addEventListener('click', () => {
-  body.classList.toggle('color-change');
-  
-  if (isSun) {
-    sphere.innerHTML = "<i class='bx bxs-moon'></i>";
-    navOng.forEach(nav => { nav.style.color ='#1E123A'; }); // Fixed color value
-    isSun = false;
-  } else {
-    sphere.innerHTML = "<i class='bx bxs-sun'></i>";
-    navOng.forEach(nav => { nav.style.color ='#fff'; });
-    isSun = true;
-  }
-});
-
-const navH1= document.querySelector('nav h1');
-
-window.addEventListener('resize', () => {
-  if (window.innerWidth < 682) {
-    navH1.textContent = 'SS';
-  } else {
-    navH1.textContent = 'SportShop';
-  }
-});
-
-
-const openBtn = document.querySelector('.dropbtn');
-const closeBtn = document.querySelector('.close-button');
-const contentBtn = document.querySelector('.dropdown-content');
-
-openBtn.addEventListener('click', () => {
-  contentBtn.style.width = '100%';
-});
-closeBtn.addEventListener('click', () => {
-  contentBtn.style.width = '0';
-});
 
 
 const buttonLeft = document.querySelector('.buttons #next');
@@ -50,17 +9,11 @@ buttonRight.addEventListener('click', () => {
   document.querySelector('.cards').scrollLeft += 200;
 });
 
-
 const shopButton = document.getElementById('shop-button');
 
 shopButton.addEventListener('click', () => {
   document.querySelector('.container-shop').style.display = 'block';
 });
-
-
-
-
-
 
 const baseBallButton = document.querySelector(".baseball .baseball-content button");
 const baseball = document.querySelector(".baseball");
@@ -93,8 +46,6 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-
-
 const readMoreBtn = document.querySelector('.read-more-btn');
 const readLessBtn = document.querySelector('.read-less-btn');
 const contentContainer = document.querySelector('.card-football');
@@ -107,7 +58,3 @@ readLessBtn.addEventListener('click', function() {
   contentContainer.style.height = "3000px"
 });
 
-
-const date = document.querySelector('#date')
-let dateType = new Date().getFullYear()
-date.innerHTML = dateType

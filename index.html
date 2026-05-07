@@ -37,9 +37,9 @@
                 <input type="search" name="search" id="search" placeholder="Search">
             </form>
 
-            <p class="icons"><a href="shop/shop.html" rel="noopener noreferrer"><i
+            <p class="icons"><a href="shop/shop.html" rel="noopener noreferrer" aria-label="Go to shopping cart"><i
                         class="fa-solid fa-cart-shopping"></i></a></p>
-            <p class="icons" id="sphere" style="cursor: pointer;"><i class='bx bxs-moon'></i></p>
+            <p class="icons" id="sphere" aria-label="Toggle dark mode" aria-pressed="false" style="cursor: pointer;"><i class='bx bxs-moon'></i></p>
 
             <button class="dropbtn"><i class="fa-solid fa-bars"></i> MENU</button>
         </div>
@@ -89,8 +89,8 @@
 
     <div class="container-shop">
         <div class="buttons">
-            <button id="next"><i class='bx bx-left-arrow'></i></button>
-            <button id="prev"><i class='bx bx-right-arrow'></i></button>
+            <button id="next" aria-label="Next Item"><i class='bx bx-left-arrow'></i></button>
+            <button id="prev" aria-label="Previous Item"><i class='bx bx-right-arrow'></i></button>
         </div>
 
         <div class="cards">
@@ -1025,8 +1025,8 @@
 
     </div>
 
-    <button class="read-more-btn btn-button" type="button"><i class='bx bx-chevrons-down'></i></button>
-    <button class="read-less-btn btn-button" type="button"><i class='bx bx-chevrons-up'></i></button>
+    <button class="read-more-btn btn-button" aria-expanded="false" aria-label="Read more" type="button"><i class='bx bx-chevrons-down'></i></button>
+    <button class="read-less-btn btn-button" aria-expanded="true" aria-label="Read less" type="button"><i class='bx bx-chevrons-up'></i></button>
 
 
 
@@ -1180,6 +1180,7 @@
 
 
 
+    <script src="js/global.js"></script>
     <script src="script.js" type="text/javascript"></script>
 </body>
 
