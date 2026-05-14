@@ -244,6 +244,12 @@ header button {
     box-shadow: 0 8px 24px rgba(239, 37, 85, 0.3);
 }
 
+header button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
 .container-shop,
 .global-base {
     display: none;
@@ -467,13 +473,13 @@ header button {
     color: var(--main-color);
 }
 
-#shoes .shoes-cards {
+.shoes-cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
     gap: 18px;
 }
 
-#shoes .shoes-card {
+.shoes-card {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 14px;
@@ -481,27 +487,37 @@ header button {
     box-shadow: var(--shadow);
 }
 
-#shoes .shoes-card img {
+.shoes-card img {
     width: 100%;
     height: 220px;
     object-fit: cover;
 }
 
-#shoes .shoes-card div {
+.shoes-card div {
     padding: 12px 14px 14px;
 }
 
-#shoes .shoes-card div p {
+.shoes-card div p {
     margin: 0 0 8px;
     font-weight: 600;
     color: var(--muted);
 }
 
-#shoes .shoes-card div p:last-child {
+.shoes-card div p:last-child {
     margin: 0;
     color: var(--second-color);
 }
 
+
+.woman {
+    margin: 44px clamp(20px, 6vw, 96px) 0;
+}
+
+.woman h2 {
+    margin: 0 0 14px;
+    font-size: clamp(1.4rem, 2.4vw, 2rem);
+    color: var(--main-color);
+}
 /* Contact Section Redesign */
 .contact-wrapper {
     margin: 80px auto 60px;
