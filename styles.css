@@ -115,7 +115,7 @@ nav .onglet .link {
     margin: 0;
 }
 
-nav .onglet p a {
+nav .onglet .dropdown-content p a {
     display: inline-block;
     padding: 8px 12px;
     border-radius: 999px;
@@ -125,7 +125,7 @@ nav .onglet p a {
     transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-nav .onglet p a:hover {
+nav .onglet .dropdown-content p a:hover {
     background: rgba(47, 139, 255, 0.12);
     color: var(--accent);
 }
@@ -156,6 +156,23 @@ nav .onglet input:focus {
     color: var(--main-color);
 }
 
+.point-count {
+    height: 13px;
+    width: 13px;
+    border-radius: 100%;
+    font-size: 11px;
+    background-color: red;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
 .dropbtn {
     display: none;
     border: 1px solid var(--border);
@@ -174,6 +191,8 @@ nav .onglet input:focus {
 .fa-xmark {
     display: none;
 }
+
+
 
 header {
     padding: 26px clamp(20px, 6vw, 96px) 52px;
@@ -418,8 +437,11 @@ header button a {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 14px;
-    overflow: hidden;
     box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
 .card-baseball .card-baseball-content img {
@@ -443,8 +465,26 @@ header button a {
     font-size: 0.92rem;
 }
 
+.card-baseball .card-baseball-content button {
+    margin-top: 20px 0 0;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 700;
+    color: #fff;
+    background: var(--gradient);
+    padding: 10px;
+    box-shadow: 0 8px 24px rgba(239, 37, 85, 0.3);
+}
+
+.card-baseball .card-baseball-content div button:nth-child(1) {
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: 10px;
+}
+
 .card-football {
-    height: 3000px;
+    height: 3100px;
     overflow: hidden;
     transition: height 0.45s ease;
 }

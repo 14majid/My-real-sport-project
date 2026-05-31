@@ -1,5 +1,3 @@
-
-
 const buttonLeft = document.querySelector('.buttons #next');
 const buttonRight = document.querySelector('.buttons #prev');
 buttonLeft.addEventListener('click', () => {
@@ -46,15 +44,62 @@ window.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-const readMoreBtn = document.querySelector('.read-more-btn');
-const readLessBtn = document.querySelector('.read-less-btn');
+
+
+const scrollBtn = document.querySelector('.read-more-btn');
 const contentContainer = document.querySelector('.card-football');
 
-readMoreBtn.addEventListener('click', function() {
-  contentContainer.style.height = "100%"
+let expanded = false;
+
+scrollBtn.addEventListener('click', function () {
+
+  if (!expanded) {
+    contentContainer.style.height =
+    contentContainer.scrollHeight + 'px';
+
+    scrollBtn.innerHTML = "<i class='bx bx-chevrons-up'></i>";
+    expanded = true;
+
+  } else {
+    contentContainer.style.height = '3100px';
+
+    scrollBtn.innerHTML = "<i class='bx bx-chevrons-down'></i>";
+    expanded = false;
+  }
 });
 
-readLessBtn.addEventListener('click', function() {
-  contentContainer.style.height = "3000px"
-});
+console.log(contentContainer.scrollHeight);
+
+
+
+
+let i = 1
+const footballBaseContant = document.querySelector('.card-football .card-baseball-content')
+const Heart =  document.querySelectorAll('.heart')
+const pointCount = document.querySelector('.point-count')
+
+// const Result = document.querySelector('result')
+
+
+// Heart.addEventListener('click', ()=> {
+//   pointCount.innerHTML = i++
+// })
+
+Heart.forEach((heart) => {
+  heart.addEventListener('click', ()=> {
+    pointCount.style.display = 'block'
+    pointCount.innerHTML = i++
+
+
+    // let allContent = '';
+
+    // footballBaseContant.forEach((foot) => {
+    //   allContent += foot.innerHTML;
+    // });
+    
+    // localStorage.setItem('savedContent', footballBaseContant.innerHTML);
+
+    // window.location.href = 'fav/favoris.html'
+  })
+})
 

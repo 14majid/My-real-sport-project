@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../styles.css">
+    <title>My Favoris</title>
+</head>
+<body>
+
+    <nav>
+        <h1><a href="../index.html">SportShop</a></h1>
+        <div class="onglet">
+            <div class="dropdown">
+                <div class="dropdown-content">
+                    <a class="close-button"><i class="fa-solid fa-xmark" style="color: #000000;"></i></a>
+                    <p class="link"><a href="../Men/men.html">Men</a></p>
+                    <p class="link"><a href="../woman/woman.html">Woman</a></p>
+                    <p class="link"><a href="../shoes/shoes.html">Shoes</a></p>
+                </div>
+            </div>
+            <form action="">
+                <input type="search" name="search" id="search" placeholder="Search">
+            </form>
+
+            <p class="icons"><a href="shop/shop.html" rel="noopener noreferrer" aria-label="Go to shopping cart"><i
+                class="fa-solid fa-cart-shopping"></i></a></p>
+            <p class="icons" style="cursor: pointer;"><a href="fav/favoris.html"><i class="fa-solid fa-heart"></i></a></p>
+            <p class="point-count"></p>
+            <p class="icons" id="sphere" aria-label="Toggle dark mode" aria-pressed="false" style="cursor: pointer;"><i class='bx bxs-moon'></i></p>
+
+            <button class="dropbtn"><i class="fa-solid fa-bars"></i> MENU</button>
+        </div>
+    </nav>
+
+    <div class="result"></div>
+
+    <!-- <script src="../script.js"></script> -->
+     <!-- <script>
+        /*
+         1. GET THE SAVED HTML FROM localStorage
+        */
+        const savedContent = localStorage.getItem('savedContent');
+
+        /*
+          2. SELECT THE CONTAINER
+        */
+        const result = document.querySelector('.result');
+
+        /*
+         3. DISPLAY THE CONTENT
+        */
+        result.innerHTML = savedContent; -->
+     </script>
+</body>
+</html>
