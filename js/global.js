@@ -1,5 +1,6 @@
 const body = document.querySelector('body');
 const navOng = document.querySelectorAll('nav .onglet p a');
+const sportHeadSection = document.querySelectorAll('.sports-team-content h3');
 const sphere = document.querySelector('#sphere');
 
 let isSun = false;
@@ -9,10 +10,12 @@ if (sphere) {
     if (isSun) {
       sphere.innerHTML = "<i class='bx bxs-moon'></i>";
       navOng.forEach(nav => { nav.style.color ='#1E123A'; });
+      sportHeadSection.forEach(section => { section.style.color = '#1E123A'; });
       isSun = false;
     } else {
       sphere.innerHTML = "<i class='bx bxs-sun'></i>";
       navOng.forEach(nav => { nav.style.color ='#fff'; });
+      sportHeadSection.forEach(section => { section.style.color = '#fff'; });
       isSun = true;
     }
   });
@@ -28,6 +31,7 @@ if (navH1) {
     }
   });
 }
+
 
 const openBtn = document.querySelector('.dropbtn');
 const closeBtn = document.querySelector('.close-button');
@@ -49,3 +53,4 @@ if (date) {
   let dateType = new Date().getFullYear()
   date.innerHTML = dateType
 }
+

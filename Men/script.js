@@ -40,8 +40,8 @@ const adidas = document.querySelectorAll('[data-adidas]')
 const castore = document.querySelectorAll('[data-castore]')
 const newB = document.querySelectorAll('[data-newB]')
 const puma = document.querySelectorAll('[data-puma]')
-
 const natiTeam = document.querySelector('.national-team-jersey')
+
 
 function hideAllBrands() {
   nike.forEach(item => { item.style.display = 'none'; });

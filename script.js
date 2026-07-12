@@ -36,8 +36,8 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector(".woman").style.display = "none";
     document.querySelector(".football").style.display = "none";
     contentContainer.style.display = "none";
-    readMoreBtn.style.display = "none";
-    readLessBtn.style.display = "none";
+    scrollBtn.style.display = "none";
+    // readLessBtn.style.display = "none";
 
     globalBase.style.display = 'block'
     localStorage.removeItem('showElementsAfterReload');

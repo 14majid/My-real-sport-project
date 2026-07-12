@@ -151,9 +151,13 @@ nav .onglet input:focus {
     font-size: 1.2rem;
 }
 
-.icons a,
-.icons i {
+/* .icons a {
     color: var(--main-color);
+} */
+
+.icons i {
+    /* color: var(--main-color); */
+    color: #ef2555 !important;
 }
 
 .point-count {
@@ -440,7 +444,7 @@ header button a {
     box-shadow: var(--shadow);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -791,6 +795,10 @@ footer p {
     opacity: 0.9;
 }
 
+
+
+
+
 @media screen and (max-width: 980px) {
     .brand-league {
         grid-template-columns: repeat(3, minmax(84px, 1fr));
@@ -832,17 +840,18 @@ footer p {
         overflow-x: hidden;
         overflow-y: auto;
         z-index: 60;
+        display: flex;
         flex-direction: column;
-        align-items: stretch;
-        gap: 0;
+        align-items: center;
+        gap: 10px;
         background: var(--surface);
         border-right: 1px solid var(--border);
         transition: width 0.3s ease;
-        padding: 0;
+        padding-top: 20px;
     }
 
     .dropdown-content .link {
-        margin: 0;
+        margin: 0px;
     }
 
     .dropdown-content .link a {

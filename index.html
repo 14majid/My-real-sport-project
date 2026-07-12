@@ -13,7 +13,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <link rel="stylesheet" href="styles.css">
@@ -39,10 +41,13 @@
             </form>
 
             <p class="icons"><a href="shop/shop.html" rel="noopener noreferrer" aria-label="Go to shopping cart"><i
-                class="fa-solid fa-cart-shopping"></i></a></p>
-            <p class="icons" style="cursor: pointer;"><a href=""><i class="fa-solid fa-heart"></i></a></p>
-            <p class="point-count"></p>
-            <p class="icons" id="sphere" aria-label="Toggle dark mode" aria-pressed="false" style="cursor: pointer;"><i class='bx bxs-moon'></i></p>
+                        class="fa-solid fa-cart-shopping"></i></a></p>
+            <div style="position: relative;">
+                <p class="icons" style="cursor: pointer;"><a href=""><i class="fa-solid fa-heart"></i></a></p>
+                <p class="point-count"></p>
+            </div>
+            <p class="icons" id="sphere" aria-label="Toggle dark mode" aria-pressed="false" style="cursor: pointer;"><i
+                    class='bx bxs-moon'></i></p>
 
             <button class="dropbtn"><i class="fa-solid fa-bars"></i> MENU</button>
         </div>
@@ -55,8 +60,7 @@
     <header>
         <div class="brand-league">
             <div class="brand-league-logo">
-                <img src="image/nfl-logo.jpg"
-                    alt="NFL-image-logo">
+                <img src="image/nfl-logo.jpg" alt="NFL-image-logo">
                 <p>NFL</p>
             </div>
             <div class="brand-league-logo">
@@ -65,8 +69,7 @@
             </div>
 
             <div class="brand-league-logo">
-                <img src="image/mlb-logo.jpg"
-                    alt="MLB-image-logo">
+                <img src="image/mlb-logo.jpg" alt="MLB-image-logo">
                 <p>MLB</p>
             </div>
 
@@ -77,8 +80,7 @@
             </div>
 
             <div class="brand-league-logo">
-                <img src="image/socc.jpg"
-                    alt="Soccer-image-logo">
+                <img src="image/socc.jpg" alt="Soccer-image-logo">
                 <p>FootBall</p>
             </div>
         </div>
@@ -89,6 +91,7 @@
         <h1>This is the shop, For those who love sport</h1>
         <button><a href="shop/shop.html">Navigate <i class="fa-solid fa-paper-plane"></i></a></button>
     </header>
+    <!-- Header End -->
 
     <div class="container-shop">
         <div class="buttons">
@@ -245,6 +248,10 @@
                     <p>Bryce Harper Philadelphia Phillies Nike Alternate Replica Player Name Jersey - Cream</p>
 
                 </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
+                </div>
             </div>
             <div class="card-baseball-content">
                 <img src="https://fanatics.frgimages.com/san-diego-padres/mens-new-era-gold-san-diego-padres-2024-spring-training-low-profile-59fifty-fitted-hat_ss5_p-200363951+pv-3+u-rz8gg0yp5ztok7t3hcus+v-fjcc664hjwaneztkrizj.jpg?_hv=2&w=900"
@@ -254,6 +261,10 @@
                     <h4>$50</h4>
                     <p>San Diego Padres New Era Gold 2024 Spring Training Low Profile 59FIFTY Fitted Hat</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -265,6 +276,10 @@
                     <p>Ronald Acuña Jr. Atlanta Braves Nike Navy Alternate Replica Player Name Jersey</p>
 
                 </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
+                </div>
             </div>
             <div class="card-baseball-content">
                 <img src="https://fanatics.frgimages.com/atlanta-braves/mens-nike-ronald-acuna-jr-white-atlanta-braves-home-replica-player-name-jersey_pi3592000_altimages_ff_3592490-dd5738a67823c44047cbalt1_full.jpg?_hv=2&w=900"
@@ -275,6 +290,10 @@
                     <p>Ronald Acuña Jr. Atlanta Braves Nike White Home Replica Player Name Jersey</p>
 
                 </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
+                </div>
             </div>
             <div class="card-baseball-content">
                 <img src="https://fanatics.frgimages.com/san-diego-padres/womens-wear-by-erin-andrews-white/gold-san-diego-padres-color-block-full-zip-windbreaker-jacket_ss5_p-201091161+pv-2+u-wxm2jmycuozbtf2ksspp+v-mpo3xn00g9shvbssssgu.jpg?_hv=2&w=900"
@@ -282,9 +301,12 @@
                     data-caption="San Diego Padres Wear by Erin Andrews White/Gold Color Block Full-Zip Windbreaker Jacket">
                 <div>
                     <h4>$50</h4>
-                    <p>San Diego Padres Wear by Erin Andrews Color Block Full-Zip Windbreaker Jacket, perfect for
-                        stylish fans!</p>
+                    <p>San Diego Padres Wear by Erin Andrews White/Gold Color Block Full-Zip Windbreaker Jacket</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -296,6 +318,10 @@
                     <p>Los Angeles Dodgers Nike Royal Authentic Collection Full-Zip Bomber Jacket</p>
 
                 </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
+                </div>
             </div>
             <div class="card-baseball-content">
                 <img src="https://fanatics.frgimages.com/seattle-mariners/julio-rodr%C3%ADguez-seattle-mariners-autographed-bat-art-by-stadium-custom-kicks-limited-edition-number-1-of-1-xp14005699_ss5_p-200875318+pv-1+u-x9kzainjs3ip0wi41ph8+v-v01wx0zqxjbn7eeelha0.jpg?_hv=2&w=900"
@@ -303,9 +329,12 @@
                     data-caption="Julio Rodríguez Seattle Mariners Autographed Bat Art by Stadium Custom Kicks — Limited Edition 1 of 1">
                 <div>
                     <h4>$50</h4>
-                    <p>Julio Rodríguez Seattle Mariners autographed bat artwork by Stadium Custom Kicks, limited edition
-                        1 of 1 for passionate collectors!</p>
+                    <p>Julio Rodríguez Seattle Mariners Autographed Bat Art by Stadium Custom Kicks — Limited Edition 1 of 1</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -314,9 +343,12 @@
                     data-caption="New York Yankees Nike Navy Authentic Collection Practice Pullover Hoodie">
                 <div>
                     <h4>$50</h4>
-                    <p>New York Yankees Nike Navy Authentic Collection Practice Pullover Hoodie, a must-have for
-                        dedicated Yankees fans.</p>
+                    <p>New York Yankees Nike Navy Authentic Collection Practice Pullover Hoodie</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -325,9 +357,12 @@
                     data-caption="San Francisco Giants Nike Cream Home Replica Custom Jersey">
                 <div>
                     <h4>$50</h4>
-                    <p>San Francisco Giants Nike Cream Home Replica Custom Jersey – personalize it with your favorite
-                        name and number!</p>
+                    <p>San Francisco Giants Nike Cream Home Replica Custom Jersey</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -336,9 +371,12 @@
                     data-caption="Adley Rutschman Baltimore Orioles Nike White Home Limited Player Jersey">
                 <div>
                     <h4>$50</h4>
-                    <p>Adley Rutschman Baltimore Orioles Nike White Home Limited Player Jersey – show your Orioles pride
-                        with this standout jersey!</p>
+                    <p>Adley Rutschman Baltimore Orioles Nike White Home Limited Player Jersey</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -347,9 +385,12 @@
                     data-caption="Ronald Acuña Jr. Atlanta Braves Autographed Louisville Slugger Game Model Bat with 40/70 Club Inscription">
                 <div>
                     <h4>$50</h4>
-                    <p>Ronald Acuña Jr. Atlanta Braves autographed Louisville Slugger game model bat, commemorating his
-                        exclusive 40/70 Club achievement—a collector's dream for Braves fans!</p>
+                    <p>Ronald Acuña Jr. Atlanta Braves Autographed Louisville Slugger Game Model Bat with 40/70 Club Inscription</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -357,9 +398,12 @@
                     alt="Chicago Cubs Art Glass Wall Clock" data-caption="Chicago Cubs Art Glass Wall Clock">
                 <div>
                     <h4>$50</h4>
-                    <p>Chicago Cubs art glass wall clock – a stylish way to show your team pride and keep track of time!
-                    </p>
+                    <p>Chicago Cubs Art Glass Wall Clock</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -368,9 +412,12 @@
                     data-caption="Chicago Cubs Toddler Fanatics Branded Royal Field Ball T-Shirt and Shorts Set">
                 <div>
                     <h4>$50</h4>
-                    <p>Chicago Cubs toddler T-shirt and shorts set – perfect for young fans to show their Cubs spirit!
-                    </p>
+                    <p>Chicago Cubs Toddler Fanatics Branded Royal Field Ball T-Shirt and Shorts Set</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -379,9 +426,12 @@
                     data-caption="Louisville Bats Under Armour Navy Tech T-Shirt">
                 <div>
                     <h4>$50</h4>
-                    <p>Louisville Bats Under Armour Navy Tech T-Shirt – stay cool and comfortable while supporting your
-                        team with this high-performance tee.</p>
+                    <p>Louisville Bats Under Armour Navy Tech T-Shirt</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -390,9 +440,12 @@
                     data-caption="Lenny Dykstra Philadelphia Phillies Youth Mitchell &amp; Ness Burgundy Cooperstown Collection Mesh Batting Practice Jersey">
                 <div>
                     <h4>$50</h4>
-                    <p>Lenny Dykstra Philadelphia Phillies youth batting practice jersey by Mitchell &amp; Ness – a
-                        classic for Phillies fans and young sluggers!</p>
+                    <p>Lenny Dykstra Philadelphia Phillies Youth Mitchell &amp; Ness Burgundy Cooperstown Collection Mesh Batting Practice Jersey</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -401,9 +454,12 @@
                     data-caption="Oakland Athletics Nike Green Alternate Replica Team Jersey">
                 <div>
                     <h4>$50</h4>
-                    <p>Oakland Athletics Nike Green Alternate Replica Team Jersey – represent the A’s with classic green
-                        and gold style on game day or any day!</p>
+                    <p>Oakland Athletics Nike Green Alternate Replica Team Jersey</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -412,9 +468,12 @@
                     data-caption="Charlie Blackmon Colorado Rockies Nike Purple Alternate Replica Player Name Jersey">
                 <div>
                     <h4>$50</h4>
-                    <p>Charlie Blackmon Colorado Rockies Nike Purple Alternate Replica Player Name Jersey – show your
-                        Rockies pride with this bold and stylish jersey, perfect for dedicated fans!</p>
+                    <p>Charlie Blackmon Colorado Rockies Nike Purple Alternate Replica Player Name Jersey</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -423,9 +482,12 @@
                     data-caption="Brandon Crawford San Francisco Giants Nike White City Connect Replica Player Jersey">
                 <div>
                     <h4>$50</h4>
-                    <p>Brandon Crawford San Francisco Giants Nike White City Connect Replica Player Jersey – a stylish
-                        way to show your Giants pride, featuring signature details and crisp team colors!</p>
+                    <p>Brandon Crawford San Francisco Giants Nike White City Connect Replica Player Jersey</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -434,9 +496,12 @@
                     data-caption="Houston Astros #34 Signature Hardwood Bat">
                 <div>
                     <h4>$50</h4>
-                    <p>Houston Astros #34 Signature Hardwood Bat – commemorate Astros history with this collectible bat
-                        featuring iconic #34's signature, perfect for dedicated fans and collectors!</p>
+                    <p>Houston Astros #34 Signature Hardwood Bat</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -445,9 +510,12 @@
                     data-caption="Pittsburgh Pirates 22oz Canyon Water Bottle">
                 <div>
                     <h4>$50</h4>
-                    <p>Pittsburgh Pirates 22oz Canyon Water Bottle – stay hydrated and showcase your team spirit with
-                        this durable and stylish water bottle, perfect for fans on the go!</p>
+                    <p>Pittsburgh Pirates 22oz Canyon Water Bottle</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -456,9 +524,12 @@
                     data-caption="Miami Marlins Nike White Home Limited Custom Jersey">
                 <div>
                     <h4>$50</h4>
-                    <p>Miami Marlins Nike White Home Limited Custom Jersey – showcase your Marlins pride in this crisp
-                        white jersey, perfect for dedicated fans who want a personalized look!</p>
+                    <p>Miami Marlins Nike White Home Limited Custom Jersey</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -467,10 +538,12 @@
                     data-caption="Miami Marlins New Era Black Authentic Collection On-Field Low Profile 59FIFTY Fitted Hat">
                 <div>
                     <h4>$50</h4>
-                    <p>Miami Marlins New Era Black Authentic Collection On-Field Low Profile 59FIFTY Fitted Hat –
-                        represent your Marlins pride with this sleek and stylish on-field cap, perfect for any dedicated
-                        fan!</p>
+                    <p>Miami Marlins New Era Black Authentic Collection On-Field Low Profile 59FIFTY Fitted Hat</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -479,9 +552,12 @@
                     data-caption="Carlton Fisk Boston Red Sox Autographed Baseball and Mahogany Display Case">
                 <div>
                     <h4>$50</h4>
-                    <p>Carlton Fisk Boston Red Sox autographed baseball with mahogany display case – a collector's dream
-                        and the perfect centerpiece for Red Sox fans!</p>
+                    <p>Carlton Fisk Boston Red Sox Autographed Baseball and Mahogany Display Case</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -490,9 +566,12 @@
                     data-caption="2023 Topps Chrome Logofractor Baseball Mega Box">
                 <div>
                     <h4>$50</h4>
-                    <p>2023 Topps Chrome Logofractor Baseball Mega Box – score exclusive cards and elevate your
-                        collection with this must-have for passionate baseball fans and collectors!</p>
+                    <p>2023 Topps Chrome Logofractor Baseball Mega Box</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -501,9 +580,12 @@
                     data-caption="Julio Rodríguez Seattle Mariners Nike Aqua Official Replica Player Jersey">
                 <div>
                     <h4>$50</h4>
-                    <p>Julio Rodríguez Seattle Mariners Nike Aqua Official Replica Player Jersey – stand out as a true
-                        Mariners fan with this vibrant aqua jersey featuring Julio Rodríguez's name and number!</p>
+                    <p>Julio Rodríguez Seattle Mariners Nike Aqua Official Replica Player Jersey</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -512,10 +594,12 @@
                     data-caption="Texas Rangers New Era Light Blue/Royal On-Field Authentic Collection 59FIFTY Fitted Hat">
                 <div>
                     <h4>$50</h4>
-                    <p>Texas Rangers New Era Light Blue/Royal On-Field Authentic Collection 59FIFTY Fitted Hat – top off
-                        your Rangers look with this official on-field cap, blending team spirit and style for every fan!
-                    </p>
+                    <p>Texas Rangers New Era Light Blue/Royal On-Field Authentic Collection 59FIFTY Fitted Hat</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -524,9 +608,12 @@
                     data-caption="Texas Rangers Wood Design 10000 mAh Portable Power Pack">
                 <div>
                     <h4>$50</h4>
-                    <p>Texas Rangers Wood Design 10000 mAh Portable Power Pack – keep your devices charged in style
-                        while repping your team everywhere you go!</p>
+                    <p>Texas Rangers Wood Design 10000 mAh Portable Power Pack</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -535,9 +622,12 @@
                     data-caption="Royce Lewis Minnesota Twins Nike White Replica Player Jersey">
                 <div>
                     <h4>$50</h4>
-                    <p>Royce Lewis Minnesota Twins Nike White Replica Player Jersey – support your team with this
-                        stylish and comfortable jersey!</p>
+                    <p>Royce Lewis Minnesota Twins Nike White Replica Player Jersey</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -546,9 +636,12 @@
                     data-caption="Royce Lewis Minnesota Twins Nike White Replica Player Jersey">
                 <div>
                     <h4>$50</h4>
-                    <p>Royce Lewis Minnesota Twins Nike White Replica Player Jersey – support your team with this
-                        stylish and comfortable jersey!</p>
+                    <p>Royce Lewis Minnesota Twins Nike White Replica Player Jersey</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -557,9 +650,12 @@
                     data-caption="Milwaukee Brewers 2-Pack Team Pride Button Pot Set">
                 <div>
                     <h4>$50</h4>
-                    <p>Milwaukee Brewers 2-Pack Team Pride Button Pot Set – display your team spirit with these fun and
-                        functional pot decorations!</p>
+                    <p>Milwaukee Brewers 2-Pack Team Pride Button Pot Set</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -568,9 +664,12 @@
                     data-caption="Cleveland Guardians 10oz Banded Rocks Glass">
                 <div>
                     <h4>$50</h4>
-                    <p>Cleveland Guardians 10oz Banded Rocks Glass – show your Guardians spirit with this stylish banded
-                        rocks glass, perfect for any occasion!</p>
+                    <p>Cleveland Guardians 10oz Banded Rocks Glass</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -579,9 +678,12 @@
                     data-caption="Arizona Diamondbacks Fanatics Branded Black Cooperstown Collection Wahconah T-Shirt">
                 <div>
                     <h4>$50</h4>
-                    <p>Arizona Diamondbacks Fanatics Branded Black Cooperstown Collection Wahconah T-Shirt – a classic,
-                        comfortable tee for every true D-backs supporter!</p>
+                    <p>Arizona Diamondbacks Fanatics Branded Black Cooperstown Collection Wahconah T-Shirt</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -590,9 +692,12 @@
                     data-caption="Washington Nationals Nike Gray City Connect Replica Team Jersey">
                 <div>
                     <h4>$50</h4>
-                    <p>Washington Nationals Nike Gray City Connect Replica Team Jersey – represent your Nationals with
-                        this stylish gray replica jersey!</p>
+                    <p>Washington Nationals Nike Gray City Connect Replica Team Jersey</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -601,9 +706,12 @@
                     data-caption="Kansas City Royals Nike Light Blue Authentic Collection City Connect Practice Pullover Hoodie">
                 <div>
                     <h4>$50</h4>
-                    <p>Kansas City Royals Nike Light Blue Authentic Collection City Connect Practice Pullover Hoodie –
-                        look your best while supporting your Royals!</p>
+                    <p>Kansas City Royals Nike Light Blue Authentic Collection City Connect Practice Pullover Hoodie</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -612,9 +720,12 @@
                     data-caption="New York Mets Sporticulture Diamond Art Craft Kit">
                 <div>
                     <h4>$50</h4>
-                    <p>New York Mets Sporticulture Diamond Art Craft Kit – create dazzling team artwork to show off your
-                        Mets pride!</p>
+                    <p>New York Mets Sporticulture Diamond Art Craft Kit</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
             <div class="card-baseball-content">
@@ -623,9 +734,12 @@
                     data-caption="Cleveland Guardians Team Uniform Coaster Set">
                 <div>
                     <h4>$50</h4>
-                    <p>Cleveland Guardians Team Uniform Coaster Set – a perfect addition to any baseball fan's home or
-                        office.</p>
+                    <p>Cleveland Guardians Team Uniform Coaster Set</p>
 
+                </div>
+                <div>
+                    <button>Buy Now</button>
+                    <button class="heart"><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
         </div>
@@ -713,7 +827,7 @@
                 <button class="heart"><i class="fa-regular fa-heart"></i></button>
             </div>
         </div>
-        
+
         <div class=" card-baseball-content">
             <img src="https://fanatics.frgimages.com/san-francisco-49ers/mens-nike-christian-mccaffrey-tundra-white-san-francisco-49ers-fashion-game-jersey_ss5_p-201064585+pv-2+u-j4gts4zvqoozbse9edgo+v-apjjs7jfqevv5z8l21xk.jpg?_hv=2&w=900"
                 alt="Christian McCaffrey San Francisco 49ers Nike Tundra White Fashion Game Jersey"
@@ -1165,12 +1279,12 @@
         </div>
 
         <div class=" card-baseball-content">
-            <img src="https://fathead.com/cdn/shop/products/614973f78cca374fe519674dec9a9eca98ee7b40.png?v=1629115095&width=1946"
-                alt="NFL Peel-and-Stick Wall Graphic Decal (Fathead)"
-                data-caption="NFL Peel-and-Stick Wall Graphic Decal (Fathead)">
+            <img src="https://fanatics.frgimages.com/new-york-giants/mens-champion-gray-new-york-giants-classic-mesh-shorts_ss5_p-203695553+pv-1+u-kwwxm3o3gh8gsqyujs9z+v-eh4ofxg92ubpqerr1m2n.jpg?_hv=2&w=1018"
+                alt="New York Giants Champion Classic Mesh Shorts"
+                data-caption="New York Giants Champion Classic Mesh Shorts">
             <div>
                 <h4>$55</h4>
-                <p>NFL Peel-and-Stick Wall Graphic Decal (Fathead)</p>
+                <p>New York Giants Champion Classic Mesh Shorts</p>
             </div>
             <div>
                 <button>Buy Now</button>
@@ -1206,9 +1320,9 @@
         </div>
 
         <div class="card-baseball-content">
-            <img src="https://images.footballfanatics.com/minnesota-vikings/minnesota-vikings-riddell-revolution-speed-flex-authentic-football-helmet_pi3967000_altimages_ff_3967604-2549e3f4a785a506e3baalt1_full.jpg?_hv=2&w=900"
-            alt="Minnesota Vikings Riddell Revolution Speed Flex Authentic Football Helmet"
-            data-caption="Minnesota Vikings Riddell Revolution Speed Flex Authentic Football Helmet">
+            <img src="https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MToxYjg4MDU3NzIxNjJjNWIwOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAzMmQxNGEwMzM2ODowMDA2NTM2Y2JmYjg0NDBmEAIYAQ=="
+                alt="Minnesota Vikings Riddell Revolution Speed Flex Authentic Football Helmet"
+                data-caption="Minnesota Vikings Riddell Revolution Speed Flex Authentic Football Helmet">
             <div>
                 <h4>$110</h4>
                 <p>Minnesota Vikings Riddell Revolution Speed Flex Authentic Football Helmet</p>
@@ -1217,12 +1331,11 @@
                 <button>Buy Now</button>
                 <button class="heart"><i class="fa-regular fa-heart"></i></button>
             </div>
-         </div>
+        </div>
 
         <div class="card-baseball-content">
-            <img src="https://fanatics.frgimages.com/baltimore-ravens/baltimore-ravens-3-x-5-team-flag_ss5_p-12017691+pv-1+u-duo6gt9h4kwlh3gcyjtu+v-dscib6flopdknqxzrist.jpg?_hv=2&w=900"
-            alt="Baltimore Ravens 3' x 5' Team Flag"
-            data-caption="Baltimore Ravens 3' x 5' Team Flag">
+            <img src="https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTozNDNiZGRiOGMwMDRhYWY1OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAzMmQxNGEwMzM2ODowMDA2NTM2Y2M2MTNhNjhmEAIYAQ=="
+                alt="Baltimore Ravens 3' x 5' Team Flag" data-caption="Baltimore Ravens 3' x 5' Team Flag">
             <div>
                 <h4>$25</h4>
                 <p>Baltimore Ravens 3' x 5' Team Flag</p>
@@ -1234,9 +1347,9 @@
         </div>
 
         <div class="card-baseball-content">
-            <img src="https://fanatics.frgimages.com/pittsburgh-steelers/pittsburgh-steelers-fanatics-authentic-10-x-30-in-the-zone-canvas_pi3506000_altimages_ff_3506977-21a8f897c398bdebd81dalt2_full.jpg?_hv=2&w=900"
-            alt="Pittsburgh Steelers Fanatics Authentic 10'' x 30'' In the Zone Canvas"
-            data-caption="Pittsburgh Steelers Fanatics Authentic 10'' x 30'' In the Zone Canvas">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.5NlI9xz1XOzocZD1JkPWLwHaE8?r=0&cb=thfvnextfalcon&pid=Api"
+                alt="Pittsburgh Steelers Fanatics Authentic 10'' x 30'' In the Zone Canvas"
+                data-caption="Pittsburgh Steelers Fanatics Authentic 10'' x 30'' In the Zone Canvas">
             <div>
                 <h4>$35</h4>
                 <p>Pittsburgh Steelers Fanatics Authentic 10'' x 30'' In the Zone Canvas</p>
@@ -1248,9 +1361,8 @@
         </div>
 
         <div class="card-baseball-content">
-            <img src="https://fanatics.frgimages.com/dallas-cowboys/dallas-cowboys-16oz-team-logo-cooler-cup_ss5_p-12004715+pv-1+u-u3lg4bmqf4osxqlwvzgh+v-2fdgf08dkwxsqafdkmes.jpg?_hv=2&w=900"
-                alt="Dallas Cowboys 16oz Team Logo Cooler Cup"
-                data-caption="Dallas Cowboys 16oz Team Logo Cooler Cup">
+            <img src="https://images.openai.com/static-rsc-4/QYYPy3FTcbt1_2o6hKnkl1go1IAdC_orCE7zzFss_-QxgGm04d6sj05wreGPiI24FcFaiwk-FkN21t6VxKKlSwLwFyKFBvLGOEmb2xNxwe-ohTRSi9wz1OSrOLTxurD2VJvcgbSQa-MQyMPgRpiJStOpp0k9EAEX1r2OFY52apVFYaK5jplDj408l5AVdkQZ?purpose=fullsize"
+                alt="Dallas Cowboys 16oz Team Logo Cooler Cup" data-caption="Dallas Cowboys 16oz Team Logo Cooler Cup">
             <div>
                 <h4>$12</h4>
                 <p>Dallas Cowboys 16oz Team Logo Cooler Cup</p>
@@ -1262,9 +1374,8 @@
         </div>
 
         <div class="card-baseball-content">
-            <img src="https://fanatics.frgimages.com/kansas-city-chiefs/kansas-city-chiefs-enamel-team-logo-pin_ss5_p-12019492+pv-1+u-4tp0q20qjkgnmn7gpvkm+v-5qhudxwbrg9g045zntuh.jpg?_hv=2&w=900"
-            alt="Kansas City Chiefs Enamel Team Logo Pin"
-            data-caption="Kansas City Chiefs Enamel Team Logo Pin">
+            <img src="https://images.openai.com/static-rsc-4/dW0eonCM-iJj3lIki_Mkuk25kWpPJhdttASKT0jYiWTPaHYe0CeGWrQzCN2x9VoAiPjaiVmOl83ra4STPMbmS41cWdkNqhhtQ2ijDypASlbok3dEmPhxWnPXO00Rox5KlfWmllnWnM0Yma9SscQXpKcei0vXfbbxeuQaZaTloLqIhXI2XV9Cr6ufieHtAzJP?purpose=fullsize"
+                alt="Kansas City Chiefs Enamel Team Logo Pin" data-caption="Kansas City Chiefs Enamel Team Logo Pin">
             <div>
                 <h4>$7</h4>
                 <p>Kansas City Chiefs Enamel Team Logo Pin</p>
@@ -1275,10 +1386,206 @@
             </div>
         </div>
 
+        <div class="card-baseball-content">
+            <img src="https://images.openai.com/static-rsc-4/KIfA5M4FBUNarrpZjWTCuNM6qzyTJ-Ak-e5Yl1mmoqpKZyZQmPcQqwbqHVR7uaEgZakSnxsRfj8Kiyyl3SHvwxNaVgDXXFPe2cJ8IbYVOGLQUqCG5d-V10YI4zh_4Ij5HOh1tNd7AIfdI1omQ4-tx_JZlrCrA1n3lraqwFSaVmY7B3dv7g1wRl0_Al0Es3h8?purpose=fullsize"
+                alt="Jordan Love Green Bay Packers Jersey"
+                data-caption="Jordan Love Green Bay Packers Jersey">
+            <div>
+                <h4>$110</h4>
+                <p>Jordan Love Green Bay Packers Jersey</p>
+            </div>
+            <div>
+                <button>Buy Now</button>
+                <button class="heart"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+
+        <div class="card-baseball-content">
+            <img src="https://images.openai.com/static-rsc-4/0lDROIjHQfuzwegMNPtB5d3EpHVtWGJwntVKlG4kihvw0a4L-ffbF-Hu4TrQUZH2X96IRDBTR4GeZAA2GGWF-RzY5Mj1_HIrFXTeH1e5Z2iZR41NcTn4I80N665RzX2KRYkj7Q7OsS7-mJzC_Ei-zcTvoMOtQtu2QQbKUQ6JR7okVHbjJWDumYVdXDvGMCmh?purpose=fullsize"
+                alt="Josh Allen Buffalo Bills Jersey"
+                data-caption="Josh Allen Buffalo Bills Jersey">
+            <div>
+                <h4>$120</h4>
+                <p>Josh Allen Buffalo Bills Jersey</p>
+            </div>
+            <div>
+                <button>Buy Now</button>
+                <button class="heart"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+
+        <div class="card-baseball-content">
+            <img src="https://images.openai.com/static-rsc-4/H46Zo76Ue_BBEtbHT128xD4W0To_DprkqwFVDJXrB-ylvUYehHXuwLtSgUtshO9Cac9bcXE38plZeq9vMDTSCqHbKPFM9YVJWk07TadTaKzH-qkvmp3GHiPR1J8GXlPQ4zSclKxkA-8LBSS0o79H4XZmZHfuYrqxUCqmesUrziQ-quGp8qM0yyXsFArnzpIO?purpose=fullsize"
+                alt="Tua Tagovailoa Miami Dolphins Jersey"
+                data-caption="Tua Tagovailoa Miami Dolphins Jersey">
+            <div>
+                <h4>$129</h4>
+                <p>Tua Tagovailoa Miami Dolphins Jersey</p>
+            </div>
+            <div>
+                <button>Buy Now</button>
+                <button class="heart"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+
+        <div class="card-baseball-content">
+            <img src="https://images.openai.com/static-rsc-4/jE7lfhDJKb9ttq-DrWlHEL6YySc-zag2o29gln7bJ1KA_-3PqD6vABycHMk-nvuWU4MATt8fc8zh7FW_En4qizfZUgsaoXotEuaLl1er__FT9sxdnd4QmnGXOnmcrRiVOfoIX7_p5ac8hxJY5ALx0c43HgsOx1aqWjVd3paJLPPy3O6ogfzPsOUBVLvAiMTD?purpose=fullsize"
+                alt="Davante Adams Las Vegas Raiders Jersey"
+                data-caption="Davante Adams Las Vegas Raiders Jersey">
+            <div>
+                <h4>$105</h4>
+                <p>Davante Adams Las Vegas Raiders Jersey</p>
+            </div>
+            <div>
+                <button>Buy Now</button>
+                <button class="heart"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+
+        <div class="card-baseball-content">
+            <img src="https://fanatics.frgimages.com/detroit-lions/mens-new-era-blue/silver-detroit-lions-2026-nfl-draft-pre-curved-59fifty-fitted-hat_ss5_p-203406295+pv-1+u-kiudakgczog68ifltg94+v-gghgpbaoqhhlh24h7fxg.jpg?_hv=2&w=1018"
+                alt="Patrick Mahomes Kansas City Chiefs Jersey"
+                data-caption="Patrick Mahomes Kansas City Chiefs Jersey">
+            <div>
+                <h4>$140</h4>
+                <p>Detroit Lions New Era 2026 NFL Draft Pre-Curved 59FIFTY Fitted Hat</p>
+            </div>
+            <div>
+                <button>Buy Now</button>
+                <button class="heart"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+
+        <div class="card-baseball-content">
+            <img src="https://fanatics.frgimages.com/houston-texans/bad-bunny-x%C2%A0houston-texans%C2%A0concho-hoodie_ss5_p-203830978+pv-1+u-hd6uz7rrtmmdfxuk5bep+v-kphf80wbwhimjnwn7nic.png?_hv=2&w=1018"
+                alt="Bad Bunny x Houston Texans Concho Hoodie"
+                data-caption="Bad Bunny x Houston Texans Concho Hoodie">
+            <div>
+                <h4>$115</h4>
+                <p>Bad Bunny x Houston Texans Concho Hoodie</p>
+            </div>
+            <div>
+                <button>Buy Now</button>
+                <button class="heart"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+
+        <div class="card-baseball-content">
+            <img src="https://fanatics.frgimages.com/jacksonville-jaguars/unisex-crocs-jacksonville-jaguars-classic-clog_ss5_p-203784437+pv-1+u-cbczx6xeej0bcbvxtelk+v-1mfzdvfttavevk1kwcm0.jpg?_hv=2&w=1018"
+                alt="Jacksonville Jaguars Crocs Unisex Classic Clog"
+                data-caption="Jacksonville Jaguars Crocs Unisex Classic Clog">
+            <div>
+                <h4>$128</h4>
+                <p>Jacksonville Jaguars Crocs Unisex Classic Clog</p>
+            </div>
+            <div>
+                <button>Buy Now</button>
+                <button class="heart"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+
+        <div class="card-baseball-content">
+            <img src="https://fanatics.frgimages.com/new-orleans-saints/mens-new-era-cream-new-orleans-saints-2026-nfl-training-camp-sport-bucket-hat_ss5_p-203522337+pv-1+u-y62aofjl58vq46jdw10u+v-ninvrggcb1dhpdlea2b6.jpg?_hv=2&w=1018"
+                alt="New Orleans Saints New Era 2026 NFL Training Camp Sport Bucket Hat - Cream"
+                data-caption="New Orleans Saints New Era 2026 NFL Training Camp Sport Bucket Hat - Cream">
+            <div>
+                <h4>$132</h4>
+                <p>New Orleans Saints New Era 2026 NFL Training Camp Sport Bucket Hat - Cream</p>
+            </div>
+            <div>
+                <button>Buy Now</button>
+                <button class="heart"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+
+        <div class="card-baseball-content">
+            <img src="https://fanatics.frgimages.com/tennessee-titans/mens-rock-em-socks-tennessee-titans-primary-crew-socks-and-boxer-briefs-combo-pack_ss5_p-201585761+pv-2+u-7plzpjhfmnq1vckw4bqi+v-ezazxkwskgcfmcivzesk.jpg?_hv=2&w=1018"
+                alt="Tennessee Titans Rock Em Socks Primary Crew Socks"
+                data-caption="Tennessee Titans Rock Em Socks Primary Crew Socks">
+            <div>
+                <h4>$119</h4>
+                <p>Tennessee Titans Rock Em Socks Primary Crew Socks</p>
+            </div>
+            <div>
+                <button>Buy Now</button>
+                <button class="heart"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+
+        <div class="card-baseball-content">
+            <img src="https://fanatics.frgimages.com/los-angeles-rams/mens-starter-royal-los-angeles-rams-satin-varsity-full-snap-jacket_ss5_p-204090849+pv-3+u-a2kyba1vzfkdlgrcaku4+v-2zsderxcyrtyg7c8f57s.png?_hv=2&w=1018"
+                alt="Los Angeles Rams Starter Satin Varsity Full-Snap Jacket - Royal"
+                data-caption="Los Angeles Rams Starter Satin Varsity Full-Snap Jacket - Royal">
+            <div>
+                <h4>$134</h4>
+                <p>Los Angeles Rams Starter Satin Varsity Full-Snap Jacket - Royal</p>
+            </div>
+            <div>
+                <button>Buy Now</button>
+                <button class="heart"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+
+        <div class="card-baseball-content">
+            <img src="https://fanatics.frgimages.com/indianapolis-colts/unisex-nike-royal-indianapolis-colts-air-zoom-pegasus-41-sneakers_ss5_p-202619754+pv-3+u-nahflgbukf5dyic2pqcp+v-kpcokvhabpgfajpbpr7z.jpg?_hv=2&w=1018"
+                alt="Indianapolis Colts Nike Unisex Air Zoom Pegasus 41 Sneakers"
+                data-caption="Indianapolis Colts Nike Unisex Air Zoom Pegasus 41 Sneakers">
+            <div>
+                <h4>$130</h4>
+                <p>Indianapolis Colts Nike Unisex Air Zoom Pegasus 41 Sneakers</p>
+            </div>
+            <div>
+                <button>Buy Now</button>
+                <button class="heart"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+
+        <div class="card-baseball-content">
+            <img src="https://i.pinimg.com/736x/36/a9/c8/36a9c8bb269f05431f22af0b3fcfe6ef.jpg"
+                alt="Tyreek Hill Miami Dolphins Jersey"
+                data-caption="Tyreek Hill Miami Dolphins Jersey">
+            <div>
+                <h4>$122</h4>
+                <p>Tyreek Hill Miami Dolphins Jersey</p>
+            </div>
+            <div>
+                <button>Buy Now</button>
+                <button class="heart"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+
+        <div class="card-baseball-content">
+            <img src="https://fanatics.frgimages.com/arizona-cardinals/arizona-cardinals-2021-team-trading-card-set_pi4590000_ff_4590349-a1cef6fbccd2b48a9e89_full.jpg?_hv=2&w=1018"
+                alt="Arizona Cardinals 2021 Team Trading Card Set"
+                data-caption="Arizona Cardinals 2021 Team Trading Card Set">
+            <div>
+                <h4>$118</h4>
+                <p>Arizona Cardinals 2021 Team Trading Card Set</p>
+            </div>
+            <div>
+                <button>Buy Now</button>
+                <button class="heart"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
+
+        <div class="card-baseball-content">
+            <img src="https://fanatics.frgimages.com/denver-broncos/denver-broncos-riddell-retro-collection-speed-mini-helmet_ss5_p-203663762+pv-2+u-zruu7tdatkbsyoa5tpuj+v-oxjjzbsxxez58fxhugoq.jpg?_hv=2&w=1018"
+                alt="Denver Broncos Riddell Retro Collection Speed Mini Helmet"
+                data-caption="Denver Broncos Riddell Retro Collection Speed Mini Helmet">
+            <div>
+                <h4>$137</h4>
+                <p>Denver Broncos Riddell Retro Collection Speed Mini Helmet</p>
+            </div>
+            <div>
+                <button>Buy Now</button>
+                <button class="heart"><i class="fa-regular fa-heart"></i></button>
+            </div>
+        </div>
     </div>
 
     <!-- <button class="read-more-btn btn-button" aria-expanded="false" aria-label="Read more" type="button">Read more</button> -->
-    <button class="read-more-btn btn-button" aria-expanded="false" aria-label="Read more" type="button"><i class='bx bx-chevrons-down'></i></button>
+    <button class="read-more-btn btn-button" aria-expanded="false" aria-label="Read more" type="button"><i
+            class='bx bx-chevrons-down'></i></button>
     <!-- <button class="read-less-btn btn-button" aria-expanded="true" aria-label="Read less" type="button"><i class='bx bx-chevrons-up'></i></button> -->
 
 
@@ -1435,6 +1742,7 @@
 
     <!-- <script src="js/global.js"></script> -->
     <script src="script.js" type="text/javascript"></script>
+    <script src="js/global.js"></script>
 </body>
 
 </html>
