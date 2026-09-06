@@ -57,13 +57,13 @@ scrollBtn.addEventListener('click', function () {
     contentContainer.style.height =
     contentContainer.scrollHeight + 'px';
 
-    scrollBtn.innerHTML = "<i class='bx bx-chevrons-up'></i>";
+    scrollBtn.innerHTML = '<i class="icn icn-chevrons-up"></i>';
     expanded = true;
 
   } else {
     contentContainer.style.height = '3100px';
 
-    scrollBtn.innerHTML = "<i class='bx bx-chevrons-down'></i>";
+    scrollBtn.innerHTML = '<i class="icn icn-chevrons-down"></i>';
     expanded = false;
   }
 });

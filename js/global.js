@@ -8,12 +8,12 @@ if (sphere) {
   sphere.addEventListener('click', () => {
     body.classList.toggle('color-change');
     if (isSun) {
-      sphere.innerHTML = "<i class='bx bxs-moon'></i>";
+      sphere.innerHTML = '<i class="icn icn-moon"></i>';
       navOng.forEach(nav => { nav.style.color ='#1E123A'; });
       sportHeadSection.forEach(section => { section.style.color = '#1E123A'; });
       isSun = false;
     } else {
-      sphere.innerHTML = "<i class='bx bxs-sun'></i>";
+      sphere.innerHTML = '<i class="icn icn-sun"></i>';
       navOng.forEach(nav => { nav.style.color ='#fff'; });
       sportHeadSection.forEach(section => { section.style.color = '#fff'; });
       isSun = true;

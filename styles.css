@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+/* No external font imports — the site runs fully offline with local fonts.
+   "Open Sans" is kept first in the stacks for anyone who has it installed,
+   otherwise the system font takes over. */
 
 @font-face {
     font-family: myFont;
@@ -34,7 +36,7 @@
 
 body {
     margin: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     color: var(--text);
     background: linear-gradient(180deg, #f8faff 0%, #eef3fb 45%, #eaf1fb 100%);
 }
@@ -85,7 +87,7 @@ nav {
 
 nav h1 {
     margin: 0;
-    font-family: mySecondFont, "Open Sans", sans-serif;
+    font-family: mySecondFont, "Open Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     letter-spacing: 0.8px;
     color: var(--main-color);
 }
@@ -192,7 +194,7 @@ nav .onglet input:focus {
     display: none;
 }
 
-.fa-xmark {
+.icn-xmark {
     display: none;
 }
 
@@ -252,7 +254,7 @@ header h1 {
     padding: 18px 24px;
     border-radius: 22px;
     box-shadow: var(--shadow);
-    font-family: myFont, "Open Sans", sans-serif;
+    font-family: myFont, "Open Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
 header button {
@@ -599,7 +601,7 @@ header button a {
 .contact-info h2 {
     margin: 0 0 16px;
     font-size: clamp(1.8rem, 3vw, 2.4rem);
-    font-family: myFont, "Open Sans", sans-serif;
+    font-family: myFont, "Open Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
 .contact-info p {
@@ -826,7 +828,7 @@ footer p {
         display: block;
     }
 
-    .fa-xmark,
+    .icn-xmark,
     .close-button {
         display: block;
     }

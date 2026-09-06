@@ -4,13 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- Local icon system (pure CSS, no icon fonts) -->
+    <link rel="stylesheet" href="../css/icons.css">
     <link rel="stylesheet" href="../styles.css">
     <title>My Favoris</title>
 </head>
@@ -21,7 +16,7 @@
         <div class="onglet">
             <div class="dropdown">
                 <div class="dropdown-content">
-                    <a class="close-button"><i class="fa-solid fa-xmark" style="color: #000000;"></i></a>
+                    <a class="close-button"><i class="icn icn-xmark" style="color: #000000;"></i></a>
                     <p class="link"><a href="../Men/men.html">Men</a></p>
                     <p class="link"><a href="../woman/woman.html">Woman</a></p>
                     <p class="link"><a href="../shoes/shoes.html">Shoes</a></p>
@@ -31,13 +26,13 @@
                 <input type="search" name="search" id="search" placeholder="Search">
             </form>
 
-            <p class="icons"><a href="shop/shop.html" rel="noopener noreferrer" aria-label="Go to shopping cart"><i
-                class="fa-solid fa-cart-shopping"></i></a></p>
-            <p class="icons" style="cursor: pointer;"><a href="fav/favoris.html"><i class="fa-solid fa-heart"></i></a></p>
+            <p class="icons"><a href="../shop/shop.html" rel="noopener noreferrer" aria-label="Go to shopping cart"><i
+                class="icn icn-cart"></i></a></p>
+            <p class="icons" style="cursor: pointer;"><a href="favoris.html"><i class="icn icn-heart-solid"></i></a></p>
             <p class="point-count"></p>
-            <p class="icons" id="sphere" aria-label="Toggle dark mode" aria-pressed="false" style="cursor: pointer;"><i class='bx bxs-moon'></i></p>
+            <p class="icons" id="sphere" aria-label="Toggle dark mode" aria-pressed="false" style="cursor: pointer;"><i class="icn icn-moon"></i></p>
 
-            <button class="dropbtn"><i class="fa-solid fa-bars"></i> MENU</button>
+            <button class="dropbtn"><i class="icn icn-bars"></i> MENU</button>
         </div>
     </nav>
 
