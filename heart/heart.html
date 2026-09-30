@@ -1,33 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon_io/android-chrome-512x512.png" type="image/x-icon">
+
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Favorites</title>
     <link rel="stylesheet" href="../styles.css">
 
     <script src="../js/global.js" defer></script>
 
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-    const container = document.querySelector('.card-baseball');
-    let favorites = [];
+    <style>
 
-    try {
-        const stored = localStorage.getItem('favorite');
-
-        if (stored) {
-            favorites = JSON.parse(stored);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-    } catch (error) {
-        console.error('Erreur lors de la lecture des favoris:', error);
-    }
 
-    if (favorites.length > 0) {
+        .delete-button {
+            background: var(--gradient);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+    </style>
 
-        container.innerHTML = favorites.map(favorite => `
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.querySelector('.card-baseball');
+            let favorites = [];
+
+            try {
+                const stored = localStorage.getItem('favorite');
+
+                if (stored) {
+                    favorites = JSON.parse(stored);
+                }
+            } catch (error) {
+                console.error('Erreur lors de la lecture des favoris:', error);
+            }
+
+            if (favorites.length > 0) {
+
+                container.innerHTML = favorites.map(favorite => `
             <div class="card-baseball-content">
                 <img 
+                    class="favorite-image"
                     src="${favorite.image}" 
                     alt="${favorite.description || 'Article favori'}"
                     style="max-width: 100%;"
@@ -36,20 +71,43 @@
                 <div>
                     <h4>${favorite.price || 'Prix non disponible'}</h4>
                     <p>${favorite.description || 'Description non disponible'}</p>
-                    <button class="remove-favorite" data-index="${index}">Supprimer</button>
+                    <button class="delete-button" data-delete="${favorite.delete}">delete</button>
                 </div>
             </div>
         `).join('');
 
-    } else {
-        container.innerHTML = `
+            } else {
+                container.innerHTML = `
             <p>Aucun article favori sélectionné.</p>
         `;
-    }
-});
+            }
+
+            document.addEventListener('click', (event) => {
+                const deleteButton = event.target.closest('.delete-button');
+                if (!deleteButton) return;
+
+                const deleteCard = deleteButton.closest('.card-baseball-content');
+                if (!deleteCard) return;
+
+                const imageSrc = deleteCard.querySelector('img')?.src;
+                let storedFavorites = JSON.parse(localStorage.getItem('favorite')) || [];
+                storedFavorites = storedFavorites.filter(fav => fav.image !== imageSrc);
+                localStorage.setItem('favorite', JSON.stringify(storedFavorites));
+                localStorage.setItem('KeppCountAfterReload', storedFavorites.length);
+
+                deleteCard.remove();
+
+                if (storedFavorites.length === 0) {
+                    container.innerHTML = `
+                    <p>Aucun article favori sélectionné.</p>
+                    `;
+                }
+            });
+        });
     </script>
 
 </head>
+
 <body>
     <nav>
         <h1><a href="../index.html">SportShop</a></h1>
@@ -69,7 +127,8 @@
             <p class="icons"><a href="shop/shop.html" rel="noopener noreferrer" aria-label="Go to shopping cart"><i
                         class="fa-solid fa-cart-shopping"></i></a></p>
             <div style="position: relative;">
-                <p class="icons" style="cursor: pointer;"><a href="heart/heart.html"><i class="fa-solid fa-heart"></i></a></p>
+                <p class="icons" style="cursor: pointer;"><a href="heart/heart.html"><i
+                            class="fa-solid fa-heart"></i></a></p>
                 <p class="point-count"></p>
             </div>
             <p class="icons" id="sphere" aria-label="Toggle dark mode" aria-pressed="false" style="cursor: pointer;"><i
@@ -81,7 +140,7 @@
 
 
     <div class="card-baseball">
-        
+
     </div>
 
     <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea voluptatum porro explicabo deserunt ratione temporibus, beatae fugit debitis, est, placeat quis quibusdam accusantium expedita veniam. Similique facilis porro illo, vitae, odio nam neque eum fuga voluptatem nobis rerum nesciunt laudantium veniam explicabo quis excepturi. Provident facere autem velit quis beatae commodi sint deserunt. Nemo accusamus nobis provident corrupti quam officia a qui delectus ex asperiores corporis vitae cumque repellat fugit deleniti nam exercitationem natus necessitatibus ullam magnam dolorem, laudantium placeat quidem! Aliquam asperiores nemo fugiat sit accusantium, ullam eligendi neque soluta magni corporis. Voluptatem facilis eius magnam, quibusdam repellat magni at cum quam dolorum ea eaque delectus laudantium corporis architecto iusto nesciunt dolores quis! Culpa earum assumenda ea laborum nostrum numquam laboriosam maiores, dolores repudiandae! Minus optio quibusdam esse tenetur eius magnam similique explicabo, error eaque labore possimus reiciendis tempore dolore aperiam adipisci dolorem id est fuga repellat rerum, corporis enim asperiores sequi? Nobis, dicta necessitatibus cum minus incidunt in voluptas suscipit numquam, culpa nemo, nisi dolorem ipsam minima ea natus molestiae commodi. Itaque doloribus molestiae maxime et voluptate voluptatibus voluptatum minima incidunt explicabo? Aperiam, amet minus repudiandae illo eos doloribus recusandae saepe et. Deleniti modi aliquam fuga veritatis incidunt sequi magnam adipisci architecto nostrum magni, illo quia nisi reprehenderit animi sit cupiditate eum excepturi neque deserunt facere, non labore quod officia? Ipsa, beatae animi nihil tempore vitae magnam fugiat tempora, id ratione, nulla minus rerum deleniti sit quod? Tenetur, neque nulla placeat sed ex ipsum aut illum fugit consectetur aspernatur voluptatum quo, a veniam itaque commodi ducimus eos enim perspiciatis, possimus maxime mollitia non impedit! Dicta aliquam consectetur eum facilis laborum commodi dolores asperiores repellendus delectus corporis voluptas optio corrupti nulla molestias aliquid maxime maiores, modi unde porro minima dignissimos sapiente? Veritatis nam cum amet laborum beatae vel labore!</p> -->
@@ -124,4 +183,5 @@
     </footer>
     <p id="copy"><span>ALL Right <i class='bx bx-copyright'></i>Copyright </span><span id="date"></span></p>
 </body>
+
 </html>

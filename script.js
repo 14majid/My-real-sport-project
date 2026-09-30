@@ -135,6 +135,7 @@ document.addEventListener('click', (event) => {
       image : closeCard.querySelector('img').src,
       price : closeCard.querySelector('h4').textContent,
       description : closeCard.querySelector('p').textContent,
+      delete : 'delete'
     }
 
     // On récupère la liste des favoris déjà enregistrée (si elle existe), sinon un tableau vide
